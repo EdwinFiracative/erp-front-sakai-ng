@@ -1,3 +1,6 @@
 [submodule "src/assets"]
 	path = src/assets
 	url = https://github.com/cetincakiroglu/sakai-assets
+[submodule "vendor/sakai-assets"]
+	path = vendor/sakai-assets
+	url = https://github.com/cetincakiroglu/sakai-assets.git

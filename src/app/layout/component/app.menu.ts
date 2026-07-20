@@ -1,7 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, effect, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { MenuItem } from 'primeng/api';
+import Keycloak from 'keycloak-js';
+import { KEYCLOAK_EVENT_SIGNAL } from 'keycloak-angular';
 import { AppMenuitem } from './app.menuitem';
 
 @Component({
@@ -19,10 +21,67 @@ import { AppMenuitem } from './app.menuitem';
     </ul> `,
 })
 export class AppMenu {
+    /** Menu items currently visible to the authenticated user, filtered by role. */
     model: MenuItem[] = [];
 
-    ngOnInit() {
-        this.model = [
+    private readonly keycloak = inject(Keycloak);
+    private readonly keycloakSignal = inject(KEYCLOAK_EVENT_SIGNAL);
+
+    constructor() {
+        effect(() => {
+            // Recompute whenever the Keycloak auth state changes (login/logout/token refresh).
+            this.keycloakSignal();
+            this.model = this.filterByRoles(this.fullModel);
+        });
+    }
+
+    /**
+     * An item is visible when it has no `roles` restriction, or the user holds at least
+     * one of the required roles, checked against both realm roles and resource/client roles.
+     */
+    private hasAccess(item: MenuItem): boolean {
+        const roles: string[] | undefined = item['roles'];
+
+        if (!roles || roles.length === 0) {
+            return true;
+        }
+
+        if (!this.keycloak?.authenticated) {
+            return false;
+        }
+
+        const realmRoles = this.keycloak.realmAccess?.roles ?? [];
+        const resourceRoles = Object.values(this.keycloak.resourceAccess ?? {}).flatMap((access) => access.roles ?? []);
+
+        return roles.some((role) => realmRoles.includes(role) || resourceRoles.includes(role));
+    }
+
+    /** Recursively filters menu items and their children based on `hasAccess`. */
+    private filterByRoles(items: MenuItem[]): MenuItem[] {
+        return items.reduce<MenuItem[]>((visible, item) => {
+            if (!this.hasAccess(item)) {
+                return visible;
+            }
+
+            if (item.items?.length) {
+                const children = this.filterByRoles(item.items);
+
+                // Hide parent groups that end up with no visible children.
+                if (children.length === 0) {
+                    return visible;
+                }
+
+                visible.push({ ...item, items: children });
+                return visible;
+            }
+
+            visible.push(item);
+            return visible;
+        }, []);
+    }
+
+    /** Full menu definition, including the optional `roles` restriction per item. */
+    private readonly fullModel: MenuItem[] = [
             {
                 label: 'Home',
                 items: [{ label: 'Dashboard', icon: 'pi pi-fw pi-home', routerLink: ['/'] }]
@@ -82,7 +141,10 @@ export class AppMenu {
                     {
                         label: 'Crud',
                         icon: 'pi pi-fw pi-pencil',
-                        routerLink: ['/pages/crud']
+                        routerLink: ['/pages/crud'],
+                        // Example: only visible to users holding the 'admin' realm or resource role.
+                        // Adjust or remove to match your actual Keycloak roles.
+                        roles: ['view-books']
                     },
                     {
                         label: 'Not Found',
@@ -164,5 +226,4 @@ export class AppMenu {
                 ]
             }
         ];
-    }
 }
