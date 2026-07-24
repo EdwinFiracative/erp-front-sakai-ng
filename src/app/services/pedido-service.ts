@@ -14,6 +14,6 @@ export class PedidoService {
     private apiUrl = `${this.settings.apiUrl}/api/pedido/filter`;
 
     listPedidos(): Observable<Pedido[]> {
-        return this.http.post<Pedido[]>(this.apiUrl, { num: ['22583', '15552'], tdespacho: ['URBAN'] });
+        return this.http.post<Pedido[]>(this.apiUrl, { fechaAfter: "2026-01-01T00:00:00Z" });
     }
 }
