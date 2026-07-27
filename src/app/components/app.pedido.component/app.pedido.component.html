@@ -33,7 +33,7 @@
             <div class="font-semibold text-xl mb-4">Listado de Pedidos</div>
             <p-table
                 #dt1
-                [value]="pedidos"
+                [value]="(pedidos$ | async) ?? []"
                 dataKey="id"
                 [rows]="25"
                 [loading]="loading"
@@ -64,7 +64,7 @@
                         </th>
                         <th style="min-width: 12rem">
                             <div class="flex justify-between items-center">
-                                Cliente 
+                                Cliente
                                 <p-columnFilter type="text" field="cliente" display="menu" placeholder="Buscar por Cliente"></p-columnFilter>
                             </div>
                         </th>
@@ -98,7 +98,7 @@
                         </th>
                         <th style="min-width: 10rem">
                             <div class="flex justify-between items-center">
-                                Numero 
+                                Numero
                                 <p-columnFilter type="numeric" field="numero" display="menu" ></p-columnFilter>
                             </div>
                         </th>

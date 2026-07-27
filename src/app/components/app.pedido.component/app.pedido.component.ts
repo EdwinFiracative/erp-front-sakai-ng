@@ -22,6 +22,7 @@ import { Product, ProductService } from '@/app/pages/service/product.service';
 import {ObjectUtils} from "primeng/utils";
 import { PedidoService } from '../../services/pedido-service';
 import { Pedido } from '../../../models/pedido';
+import { Observable, catchError, finalize, of, shareReplay } from 'rxjs';
 
 interface expandedRows {
     [key: string]: boolean;
@@ -51,50 +52,50 @@ interface expandedRows {
     styleUrl: './app.pedido.component.scss'
 })
 export class AppPedidoComponent implements OnInit {
-    
-    pedidos: Pedido[] = [];
+
+    pedidos$: Observable<Pedido[]> = of([]);
     private readonly pedidoService = inject(PedidoService);
 
     selectedPedidos: Pedido[] = [];
-    
+
         // selectedCustomer: Customer = {};
-    
+
         // representatives: Representative[] = [];
-    
+
         // statuses: any[] = [];
-    
+
         // products: Product[] = [];
-    
+
         rowGroupMetadata: any;
-    
+
         expandedRows: expandedRows = {};
-    
+
         activityValues: number[] = [0, 100];
-    
+
         isExpanded: boolean = false;
-    
+
         balanceFrozen: boolean = false;
-    
+
         loading: boolean = true;
-    
+
         @ViewChild('filter') filter!: ElementRef;
 
     ngOnInit() {
-            setTimeout(() => {
-                this.pedidoService.listPedidos().subscribe((data) => {
-                    this.pedidos = data;
-                    this.loading = false;
-                    // this.pedidos.forEach((pedido) => (pedido.fecha = new Date(pedido.fecha)));
-                });
-            });
+        this.pedidos$ = this.pedidoService.listPedidos().pipe(
+            catchError(() => of([])),
+            finalize(() => {
+                this.loading = false;
+            }),
+            shareReplay(1)
+        );
     }
-  
 
 
 
-    
 
-  
+
+
+
 
     formatCurrency(value: number) {
         return value.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
