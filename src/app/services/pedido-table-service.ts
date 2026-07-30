@@ -15,9 +15,7 @@ export class PedidosServiceTabla {
       // TODO: apunta temporalmente al mock local para pruebas; volver a `this.apiUrl` cuando el backend este disponible.
       private mockUrl = 'response2.json';
 
-  // getPedidos(): Observable<ViewErpPedidoHeaderDto[]> {
-  //   return this.http.get<ViewErpPedidoHeaderDto[]>(this.apiUrl);
-  // }
+
 
   getPedidos(): Observable<ViewErpPedidoHeaderDto[]> {
           return this.http.post<ViewErpPedidoHeaderDto[]>(this.apiUrl, { fechaAfter: "2026-01-01T00:00:00Z" });
