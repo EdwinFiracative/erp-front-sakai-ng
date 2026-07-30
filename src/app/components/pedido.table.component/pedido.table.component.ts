@@ -1,5 +1,5 @@
 //import { Component } from '@angular/core';
-import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { Component, ElementRef, inject, OnInit, ViewChild } from '@angular/core';
 import { ConfirmationService, MessageService } from 'primeng/api';
 import { InputTextModule } from 'primeng/inputtext';
 import { MultiSelectModule } from 'primeng/multiselect';
@@ -18,9 +18,12 @@ import { InputIconModule } from 'primeng/inputicon';
 import { IconFieldModule } from 'primeng/iconfield';
 import { TagModule } from 'primeng/tag';
 import { Customer, CustomerService, Representative } from '@/app/pages/service/customer.service';
-import { PedidoTabla } from '@/models/pedido.model.tabla';
+import { ViewErpPedidoHeaderDto } from '@/models/pedidosfull';
 import { PedidosServiceTabla } from '@/app/services/pedido-table-service';
 import {ObjectUtils} from "primeng/utils";
+import { Observable } from 'rxjs/internal/Observable';
+import { of } from 'rxjs/internal/observable/of';
+import { catchError, finalize, shareReplay, take } from 'rxjs/operators';
 
 interface expandedRows {
     [key: string]: boolean;
@@ -59,6 +62,7 @@ interface expandedRows {
     providers: [ConfirmationService, MessageService, CustomerService, PedidosServiceTabla]
 })
 export class PedidoTableComponent implements OnInit {
+    
     customers1: Customer[] = [];
 
     customers2: Customer[] = [];
@@ -73,7 +77,8 @@ export class PedidoTableComponent implements OnInit {
 
     statuses: any[] = [];
 
-    pedidos: PedidoTabla[] = [];
+    pedidos$: Observable<ViewErpPedidoHeaderDto[]> = of([]);
+     private readonly pedidoService = inject(PedidosServiceTabla);
 
     rowGroupMetadata: any;
 
@@ -91,47 +96,19 @@ export class PedidoTableComponent implements OnInit {
 
     constructor(
         private customerService: CustomerService,
-        private pedidosService: PedidosServiceTabla
+        
     ) {}
 
     ngOnInit() {
-        this.customerService.getCustomersLarge().then((customers) => {
-            this.customers1 = customers;
-            this.loading = false;
+                this.pedidos$ = this.pedidoService.getPedidos().pipe(
+                    catchError(() => of([])),
+                    finalize(() => {
+                        this.loading = false;
+                    }),
+                    shareReplay(1)
 
-            // @ts-ignore
-            this.customers1.forEach((customer) => (customer.date = new Date(customer.date)));
-        });
-        this.customerService.getCustomersMedium().then((customers) => (this.customers2 = customers));
-        this.customerService.getCustomersLarge().then((customers) => (this.customers3 = customers));
-        this.pedidosService.getPedidos().subscribe((data) => {
-            this.pedidos = data;
-
-            // @ts-ignore
-            this.pedidos.forEach((pedido) => (pedido.FECHA = new Date(pedido.FECHA)));
-        });
-
-        this.representatives = [
-            { name: 'Amy Elsner', image: 'amyelsner.png' },
-            { name: 'Anna Fali', image: 'annafali.png' },
-            { name: 'Asiya Javayant', image: 'asiyajavayant.png' },
-            { name: 'Bernardo Dominic', image: 'bernardodominic.png' },
-            { name: 'Elwin Sharvill', image: 'elwinsharvill.png' },
-            { name: 'Ioni Bowcher', image: 'ionibowcher.png' },
-            { name: 'Ivan Magalhaes', image: 'ivanmagalhaes.png' },
-            { name: 'Onyama Limba', image: 'onyamalimba.png' },
-            { name: 'Stephen Shaw', image: 'stephenshaw.png' },
-            { name: 'XuXue Feng', image: 'xuxuefeng.png' }
-        ];
-
-        this.statuses = [
-            { label: 'Unqualified', value: 'unqualified' },
-            { label: 'Qualified', value: 'qualified' },
-            { label: 'New', value: 'new' },
-            { label: 'Negotiation', value: 'negotiation' },
-            { label: 'Renewal', value: 'renewal' },
-            { label: 'Proposal', value: 'proposal' }
-        ];
+                );
+        
     }
 
     onSort() {
@@ -163,16 +140,18 @@ export class PedidoTableComponent implements OnInit {
 
     expandAll() {
         if(ObjectUtils.isEmpty(this.expandedRows)) {
-            this.expandedRows = this.pedidos.reduce(
-                (acc, p) => {
-                    if (p.NUM) {
-                        acc[p.NUM] = true;
-                    }
-                    return acc;
-                },
-                {} as { [key: string]: boolean }
-            );
-            this.isExpanded = true;
+            this.pedidos$.pipe(take(1)).subscribe((pedidos) => {
+                this.expandedRows = pedidos.reduce(
+                    (acc, p) => {
+                        if (p.num) {
+                            acc[p.num] = true;
+                        }
+                        return acc;
+                    },
+                    {} as { [key: string]: boolean }
+                );
+                this.isExpanded = true;
+            });
         } else {
             this.collapseAll()
         }
