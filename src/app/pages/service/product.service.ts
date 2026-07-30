@@ -6,6 +6,23 @@ interface InventoryStatus {
     value: string;
 }
 
+export interface Nota {
+    id?: string;
+    author?: string;
+    date?: string;
+    comment?: string;
+}
+
+export interface Order {
+    id?: string;
+    productCode?: string;
+    date?: string;
+    amount?: number;
+    quantity?: number;
+    customer?: string;
+    status?: string;
+}
+
 export interface Product {
     id?: string;
     code?: string;
@@ -17,6 +34,8 @@ export interface Product {
     category?: string;
     image?: string;
     rating?: number;
+    orders?: Order[];
+    notes?: Nota[];
 }
 
 @Injectable()

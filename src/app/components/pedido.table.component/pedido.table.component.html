@@ -1,0 +1,207 @@
+        <div class="card">
+            <div class="font-semibold text-xl mb-4">Pedidos</div>
+            <p-table
+                #dt1
+                [value]="(pedidos$ | async) ?? []"
+                dataKey="num"
+                [tableStyle]="{ width: '100%' }"
+                [rowHover]="true"
+                [showGridlines]="true"
+                [expandedRowKeys]="expandedRows"
+                [globalFilterFields]="['num', 'oferta', 'proyecto', 'orden', 'detalle', 'cliente.nom', 'vendedor.nom']"
+                responsiveLayout="scroll"
+            >
+                <ng-template #caption>
+                    <div class="flex justify-between items-center flex-column sm:flex-row">
+                        <div class="flex items-center gap-2">
+                            <button pButton icon="pi pi-fw {{ isExpanded ? 'pi-minus' : 'pi-plus' }}" label="{{ isExpanded ? 'Collapse All' : 'Expand All' }}" (click)="expandAll()"></button>
+                            <button pButton label="Clear" class="p-button-outlined" icon="pi pi-filter-slash" (click)="clear(dt1)"></button>
+                        </div>
+                        <p-iconfield iconPosition="left" class="ml-auto">
+                            <p-inputicon>
+                                <i class="pi pi-search"></i>
+                            </p-inputicon>
+                            <input #filter pInputText type="text" (input)="onGlobalFilter(dt1, $event)" placeholder="Buscar pedido" />
+                        </p-iconfield>
+                    </div>
+                </ng-template>
+                <ng-template #header>
+                    <tr>
+                        <th style="width: 5rem"></th>
+                        <th pSortableColumn="num" style="min-width: 8rem">
+                            <div class="flex justify-between items-center">
+                                <span>Num <p-sortIcon field="num" /></span>
+                                <p-columnFilter type="text" field="num" display="menu" placeholder="Buscar por num"></p-columnFilter>
+                            </div>
+                        </th>
+                        <th pSortableColumn="fecha" style="min-width: 10rem">
+                            <div class="flex justify-between items-center">
+                                <span>Fecha <p-sortIcon field="fecha" /></span>
+                                <p-columnFilter type="date" field="fecha" display="menu" placeholder="mm/dd/yyyy"></p-columnFilter>
+                            </div>
+                        </th>
+                        <th pSortableColumn="oferta" style="min-width: 8rem">
+                            <div class="flex justify-between items-center">
+                                <span>Oferta <p-sortIcon field="oferta" /></span>
+                                <p-columnFilter type="text" field="oferta" display="menu" placeholder="Buscar por oferta"></p-columnFilter>
+                            </div>
+                        </th>
+                        <th pSortableColumn="proyecto" style="min-width: 8rem">
+                            <div class="flex justify-between items-center">
+                                <span>Proyecto <p-sortIcon field="proyecto" /></span>
+                                <p-columnFilter type="text" field="proyecto" display="menu" placeholder="Buscar por proyecto"></p-columnFilter>
+                            </div>
+                        </th>
+                        <th pSortableColumn="cliente.nom" style="min-width: 14rem">
+                            <div class="flex justify-between items-center">
+                                <span>Cliente <p-sortIcon field="cliente.nom" /></span>
+                                <p-columnFilter type="text" field="cliente.nom" display="menu" placeholder="Buscar por cliente"></p-columnFilter>
+                            </div>
+                        </th>
+                        <th pSortableColumn="vendedor.nom" style="min-width: 14rem">
+                            <div class="flex justify-between items-center">
+                                <span>Vendedor <p-sortIcon field="vendedor.nom" /></span>
+                                <p-columnFilter type="text" field="vendedor.nom" display="menu" placeholder="Buscar por vendedor"></p-columnFilter>
+                            </div>
+                        </th>
+                        <th pSortableColumn="orden" style="min-width: 10rem">
+                            <div class="flex justify-between items-center">
+                                <span>Orden <p-sortIcon field="orden" /></span>
+                                <p-columnFilter type="text" field="orden" display="menu" placeholder="Buscar por orden"></p-columnFilter>
+                            </div>
+                        </th>
+                        <th pSortableColumn="detalle" style="min-width: 10rem">
+                            <div class="flex justify-between items-center">
+                                <span>Detalle <p-sortIcon field="detalle" /></span>
+                                <p-columnFilter type="text" field="detalle" display="menu" placeholder="Buscar por detalle"></p-columnFilter>
+                            </div>
+                        </th>
+                        <th pSortableColumn="condic" style="min-width: 10rem">
+                            <div class="flex justify-between items-center">
+                                <span>Condición <p-sortIcon field="condic" /></span>
+                                <p-columnFilter type="text" field="condic" display="menu" placeholder="Buscar por condición"></p-columnFilter>
+                            </div>
+                        </th>
+                    </tr>
+                </ng-template>
+                <ng-template #body let-pedido let-expanded="expanded">
+                    <tr>
+                        <td>
+                            <p-button type="button" pRipple [pRowToggler]="pedido" [text]="true" [rounded]="true" [plain]="true" [icon]="expanded ? 'pi pi-chevron-down' : 'pi pi-chevron-right'" />
+                        </td>
+                        <td>{{ pedido.num }}</td>
+                        <td>{{ pedido.fecha | date: 'yyyy-MM-dd' }}</td>
+                        <td>{{ pedido.oferta || '-' }}</td>
+                        <td>{{ pedido.proyecto || '-' }}</td>
+                        <td>{{ pedido.cliente?.nom }}</td>
+                        <td>{{ pedido.vendedor?.nom }}</td>
+                        <td>{{ pedido.orden }}</td>
+                        <td>{{ pedido.detalle }}</td>
+                        <td>
+                            <p-tag [value]="pedido.condic" [severity]="getSeverity(pedido.condic)" />
+                        </td>
+                    </tr>
+                </ng-template>
+                <ng-template #emptymessage>
+                    <tr>
+                        <td colspan="10">No se encontraron pedidos.</td>
+                    </tr>
+                </ng-template>
+                <ng-template #expandedrow let-pedido>
+                    <tr>
+                        <td colspan="10">
+                            <div class="p-4 grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div>
+                                    <h5>Cliente</h5>
+                                    <ul class="list-none p-0 m-0">
+                                        <li><b>Código:</b> {{ pedido.cliente?.cod }}</li>
+                                        <li><b>Nombre:</b> {{ pedido.cliente?.nom }}</li>
+                                        <li><b>Dirección:</b> {{ pedido.cliente?.dir }}</li>
+                                        <li><b>Ciudad:</b> {{ pedido.cliente?.ciu }}</li>
+                                        <li><b>Departamento:</b> {{ pedido.cliente?.depto }}</li>
+                                        <li><b>NIT:</b> {{ pedido.cliente?.nit }}</li>
+                                        <li><b>Distribuidor:</b> {{ pedido.cliente?.dist }}</li>
+                                        <li><b>Condición:</b> {{ pedido.cliente?.condic }}</li>
+                                        <li><b>Cupo:</b> {{ pedido.cliente?.cupo | currency: 'USD' }}</li>
+                                        <li><b>Zona:</b> {{ pedido.cliente?.zona }}</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h5>Vendedor</h5>
+                                    <ul class="list-none p-0 m-0">
+                                        <li><b>Código:</b> {{ pedido.vendedor?.cod }}</li>
+                                        <li><b>Nombre:</b> {{ pedido.vendedor?.nom }}</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="p-4">
+                                <h5>Referencias del pedido {{ pedido.num }}</h5>
+                                <p-table [value]="pedido.references" dataKey="id">
+                                    <ng-template #header>
+                                        <tr>
+                                            <th pSortableColumn="pos">Pos <p-sortIcon field="pos" /></th>
+                                            <th pSortableColumn="cod.cod">Cod <p-sortIcon field="cod.cod" /></th>
+                                            <th pSortableColumn="nom">Nombre <p-sortIcon field="nom" /></th>
+                                            <th pSortableColumn="ud">UD <p-sortIcon field="ud" /></th>
+                                            <th pSortableColumn="cant">Cantidad <p-sortIcon field="cant" /></th>
+                                            <th pSortableColumn="costo">Costo <p-sortIcon field="costo" /></th>
+                                            <th pSortableColumn="pend">Pendiente <p-sortIcon field="pend" /></th>
+                                            <th pSortableColumn="neto">Neto <p-sortIcon field="neto" /></th>
+                                            <th pSortableColumn="cod.exist">Existencia <p-sortIcon field="cod.exist" /></th>
+                                            <th pSortableColumn="cod.cstd">Costo Std <p-sortIcon field="cod.cstd" /></th>
+                                            <th pSortableColumn="estado">Estado <p-sortIcon field="estado" /></th>
+                                            <th pSortableColumn="entrega">Entrega <p-sortIcon field="entrega" /></th>
+                                        </tr>
+                                    </ng-template>
+                                    <ng-template #body let-referencia>
+                                        <tr>
+                                            <td>{{ referencia.pos }}</td>
+                                            <td>{{ referencia.cod?.cod }}</td>
+                                            <td>{{ referencia.nom }}</td>
+                                            <td>{{ referencia.ud }}</td>
+                                            <td>{{ referencia.cant }}</td>
+                                            <td>{{ referencia.costo | currency: 'USD' }}</td>
+                                            <td>{{ referencia.pend }}</td>
+                                            <td>{{ referencia.neto | currency: 'USD' }}</td>
+                                            <td>{{ referencia.cod?.exist }}</td>
+                                            <td>{{ referencia.cod?.cstd | currency: 'USD' }}</td>
+                                            <td>
+                                                <p-tag [value]="referencia.estado" [severity]="getSeverity(referencia.estado)" />
+                                            </td>
+                                            <td>{{ referencia.entrega | date: 'yyyy-MM-dd' }}</td>
+                                        </tr>
+                                    </ng-template>
+                                    <ng-template #emptymessage>
+                                        <tr>
+                                            <td colspan="12">No hay referencias para este pedido.</td>
+                                        </tr>
+                                    </ng-template>
+                                </p-table>
+                            </div>
+                            <div class="p-4">
+                                <h5>Notas del pedido {{ pedido.num }}</h5>
+                                <p-table [value]="pedido.notes" dataKey="id">
+                                    <ng-template #header>
+                                        <tr>
+                                            <th pSortableColumn="cod">Cod <p-sortIcon field="cod" /></th>
+                                            <th pSortableColumn="nom">Nombre <p-sortIcon field="nom" /></th>
+                                        </tr>
+                                    </ng-template>
+                                    <ng-template #body let-nota>
+                                        <tr>
+                                            <td>{{ nota.cod }}</td>
+                                            <td>{{ nota.nom }}</td>
+                                        </tr>
+                                    </ng-template>
+                                    <ng-template #emptymessage>
+                                        <tr>
+                                            <td colspan="2">No hay notas para este pedido.</td>
+                                        </tr>
+                                    </ng-template>
+                                </p-table>
+                            </div>
+                        </td>
+                    </tr>
+                </ng-template>
+            </p-table>
+        </div>
