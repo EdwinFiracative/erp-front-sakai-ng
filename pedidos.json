@@ -1,0 +1,34 @@
+{
+    "NUM": 12345,
+    "FECHA": "2024-06-15",  
+    "CLIENTES": {
+        "COD": "901254859-01",
+        "NOM": "empresa1",
+        "DIR": "carrera con calle 123",
+        "CIU": "Bogotá"
+    },
+    "VENDEDOR": {
+        "COD": 10262,
+        "NOM": "JUAN PEREZ"
+    },
+    "referencias": [
+        {
+            "COD": "001",
+            "NOM": "producto1",
+            "CANT": 2,
+            "COSTO": 10.5
+        },
+        {
+            "COD": "002",
+            "NOM": "producto2",
+            "CANT": 1,
+            "COSTO": 20.0
+        }
+    ],
+    "notas":[
+        {
+            "COD": "*NOTA",    
+            "NOM": "Entrega en horario de oficina"
+        }
+    ]
+}

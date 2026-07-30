@@ -1,0 +1,3684 @@
+[
+    {
+        "NUM": 12345,
+        "FECHA": "2024-07-28",
+        "CLIENTES": {
+            "COD": "901834867-01",
+            "NOM": "Empresa 166 SAS",
+            "DIR": "Calle 20 # 16 - 29",
+            "CIU": "Medellín"
+        },
+        "VENDEDOR": {
+            "COD": 10264,
+            "NOM": "CARLOS RUIZ"
+        },
+        "referencias": [
+            {
+                "COD": "002",
+                "NOM": "Producto 2",
+                "CANT": 5,
+                "COSTO": 113.5
+            },
+            {
+                "COD": "039",
+                "NOM": "Producto 39",
+                "CANT": 8,
+                "COSTO": 91.34
+            },
+            {
+                "COD": "041",
+                "NOM": "Producto 41",
+                "CANT": 2,
+                "COSTO": 149.54
+            },
+            {
+                "COD": "074",
+                "NOM": "Producto 74",
+                "CANT": 1,
+                "COSTO": 42.57
+            }
+        ],
+        "notas": [
+            {
+                "COD": "*NOTA",
+                "NOM": "Llamar antes de entregar"
+            }
+        ]
+    },
+    {
+        "NUM": 12346,
+        "FECHA": "2024-06-25",
+        "CLIENTES": {
+            "COD": "901137787-07",
+            "NOM": "Empresa 155 SAS",
+            "DIR": "Calle 86 # 98 - 50",
+            "CIU": "Barranquilla"
+        },
+        "VENDEDOR": {
+            "COD": 10264,
+            "NOM": "CARLOS RUIZ"
+        },
+        "referencias": [
+            {
+                "COD": "070",
+                "NOM": "Producto 70",
+                "CANT": 4,
+                "COSTO": 57.45
+            }
+        ],
+        "notas": [
+            {
+                "COD": "*NOTA",
+                "NOM": "Entrega en horario de oficina"
+            }
+        ]
+    },
+    {
+        "NUM": 12347,
+        "FECHA": "2024-07-22",
+        "CLIENTES": {
+            "COD": "901847919-04",
+            "NOM": "Empresa 276 SAS",
+            "DIR": "Calle 101 # 67 - 67",
+            "CIU": "Bogotá"
+        },
+        "VENDEDOR": {
+            "COD": 10262,
+            "NOM": "JUAN PEREZ"
+        },
+        "referencias": [
+            {
+                "COD": "039",
+                "NOM": "Producto 39",
+                "CANT": 14,
+                "COSTO": 120.09
+            },
+            {
+                "COD": "003",
+                "NOM": "Producto 3",
+                "CANT": 15,
+                "COSTO": 129.05
+            },
+            {
+                "COD": "033",
+                "NOM": "Producto 33",
+                "CANT": 7,
+                "COSTO": 91.26
+            },
+            {
+                "COD": "019",
+                "NOM": "Producto 19",
+                "CANT": 19,
+                "COSTO": 15.42
+            }
+        ],
+        "notas": [
+            {
+                "COD": "*NOTA",
+                "NOM": "Pago contra entrega"
+            }
+        ]
+    },
+    {
+        "NUM": 12348,
+        "FECHA": "2024-08-14",
+        "CLIENTES": {
+            "COD": "901137358-05",
+            "NOM": "Empresa 171 SAS",
+            "DIR": "Calle 140 # 29 - 39",
+            "CIU": "Bucaramanga"
+        },
+        "VENDEDOR": {
+            "COD": 10264,
+            "NOM": "CARLOS RUIZ"
+        },
+        "referencias": [
+            {
+                "COD": "058",
+                "NOM": "Producto 58",
+                "CANT": 19,
+                "COSTO": 18.83
+            },
+            {
+                "COD": "070",
+                "NOM": "Producto 70",
+                "CANT": 3,
+                "COSTO": 124.49
+            },
+            {
+                "COD": "004",
+                "NOM": "Producto 4",
+                "CANT": 15,
+                "COSTO": 43.76
+            },
+            {
+                "COD": "032",
+                "NOM": "Producto 32",
+                "CANT": 4,
+                "COSTO": 72.22
+            }
+        ],
+        "notas": [
+            {
+                "COD": "*NOTA",
+                "NOM": "Entrega en horario de oficina"
+            }
+        ]
+    },
+    {
+        "NUM": 12349,
+        "FECHA": "2024-07-04",
+        "CLIENTES": {
+            "COD": "901163616-05",
+            "NOM": "Empresa 80 SAS",
+            "DIR": "Calle 43 # 47 - 82",
+            "CIU": "Barranquilla"
+        },
+        "VENDEDOR": {
+            "COD": 10263,
+            "NOM": "MARIA GOMEZ"
+        },
+        "referencias": [
+            {
+                "COD": "031",
+                "NOM": "Producto 31",
+                "CANT": 7,
+                "COSTO": 124.22
+            },
+            {
+                "COD": "058",
+                "NOM": "Producto 58",
+                "CANT": 11,
+                "COSTO": 15.31
+            },
+            {
+                "COD": "087",
+                "NOM": "Producto 87",
+                "CANT": 19,
+                "COSTO": 81.53
+            },
+            {
+                "COD": "035",
+                "NOM": "Producto 35",
+                "CANT": 17,
+                "COSTO": 54.35
+            }
+        ],
+        "notas": [
+            {
+                "COD": "*NOTA",
+                "NOM": "Mercancía delicada"
+            }
+        ]
+    },
+    {
+        "NUM": 12350,
+        "FECHA": "2024-07-13",
+        "CLIENTES": {
+            "COD": "901781358-07",
+            "NOM": "Empresa 135 SAS",
+            "DIR": "Calle 82 # 88 - 2",
+            "CIU": "Bucaramanga"
+        },
+        "VENDEDOR": {
+            "COD": 10264,
+            "NOM": "CARLOS RUIZ"
+        },
+        "referencias": [
+            {
+                "COD": "084",
+                "NOM": "Producto 84",
+                "CANT": 16,
+                "COSTO": 147.67
+            }
+        ],
+        "notas": [
+            {
+                "COD": "*NOTA",
+                "NOM": "Llamar antes de entregar"
+            }
+        ]
+    },
+    {
+        "NUM": 12351,
+        "FECHA": "2024-08-14",
+        "CLIENTES": {
+            "COD": "901940400-04",
+            "NOM": "Empresa 89 SAS",
+            "DIR": "Calle 97 # 28 - 1",
+            "CIU": "Bogotá"
+        },
+        "VENDEDOR": {
+            "COD": 10264,
+            "NOM": "CARLOS RUIZ"
+        },
+        "referencias": [
+            {
+                "COD": "008",
+                "NOM": "Producto 8",
+                "CANT": 4,
+                "COSTO": 134.71
+            },
+            {
+                "COD": "097",
+                "NOM": "Producto 97",
+                "CANT": 6,
+                "COSTO": 148.9
+            }
+        ],
+        "notas": [
+            {
+                "COD": "*NOTA",
+                "NOM": "Llamar antes de entregar"
+            }
+        ]
+    },
+    {
+        "NUM": 12352,
+        "FECHA": "2024-08-10",
+        "CLIENTES": {
+            "COD": "901573954-08",
+            "NOM": "Empresa 247 SAS",
+            "DIR": "Calle 53 # 89 - 34",
+            "CIU": "Cali"
+        },
+        "VENDEDOR": {
+            "COD": 10264,
+            "NOM": "CARLOS RUIZ"
+        },
+        "referencias": [
+            {
+                "COD": "035",
+                "NOM": "Producto 35",
+                "CANT": 11,
+                "COSTO": 25.07
+            },
+            {
+                "COD": "035",
+                "NOM": "Producto 35",
+                "CANT": 13,
+                "COSTO": 131.17
+            },
+            {
+                "COD": "050",
+                "NOM": "Producto 50",
+                "CANT": 20,
+                "COSTO": 118.66
+            }
+        ],
+        "notas": [
+            {
+                "COD": "*NOTA",
+                "NOM": "Llamar antes de entregar"
+            }
+        ]
+    },
+    {
+        "NUM": 12353,
+        "FECHA": "2024-07-08",
+        "CLIENTES": {
+            "COD": "901492892-04",
+            "NOM": "Empresa 237 SAS",
+            "DIR": "Calle 41 # 49 - 38",
+            "CIU": "Bogotá"
+        },
+        "VENDEDOR": {
+            "COD": 10264,
+            "NOM": "CARLOS RUIZ"
+        },
+        "referencias": [
+            {
+                "COD": "045",
+                "NOM": "Producto 45",
+                "CANT": 5,
+                "COSTO": 22.74
+            },
+            {
+                "COD": "063",
+                "NOM": "Producto 63",
+                "CANT": 9,
+                "COSTO": 103.43
+            }
+        ],
+        "notas": [
+            {
+                "COD": "*NOTA",
+                "NOM": "Llamar antes de entregar"
+            }
+        ]
+    },
+    {
+        "NUM": 12354,
+        "FECHA": "2024-08-08",
+        "CLIENTES": {
+            "COD": "901979425-04",
+            "NOM": "Empresa 144 SAS",
+            "DIR": "Calle 2 # 13 - 100",
+            "CIU": "Medellín"
+        },
+        "VENDEDOR": {
+            "COD": 10262,
+            "NOM": "JUAN PEREZ"
+        },
+        "referencias": [
+            {
+                "COD": "040",
+                "NOM": "Producto 40",
+                "CANT": 4,
+                "COSTO": 14.9
+            }
+        ],
+        "notas": [
+            {
+                "COD": "*NOTA",
+                "NOM": "Entrega en horario de oficina"
+            }
+        ]
+    },
+    {
+        "NUM": 12355,
+        "FECHA": "2024-08-10",
+        "CLIENTES": {
+            "COD": "901598212-07",
+            "NOM": "Empresa 105 SAS",
+            "DIR": "Calle 41 # 13 - 51",
+            "CIU": "Cali"
+        },
+        "VENDEDOR": {
+            "COD": 10263,
+            "NOM": "MARIA GOMEZ"
+        },
+        "referencias": [
+            {
+                "COD": "098",
+                "NOM": "Producto 98",
+                "CANT": 18,
+                "COSTO": 146.55
+            },
+            {
+                "COD": "062",
+                "NOM": "Producto 62",
+                "CANT": 12,
+                "COSTO": 114.21
+            },
+            {
+                "COD": "033",
+                "NOM": "Producto 33",
+                "CANT": 2,
+                "COSTO": 14.95
+            }
+        ],
+        "notas": [
+            {
+                "COD": "*NOTA",
+                "NOM": "Dejar en portería"
+            }
+        ]
+    },
+    {
+        "NUM": 12356,
+        "FECHA": "2024-06-20",
+        "CLIENTES": {
+            "COD": "901915965-06",
+            "NOM": "Empresa 235 SAS",
+            "DIR": "Calle 20 # 15 - 92",
+            "CIU": "Bogotá"
+        },
+        "VENDEDOR": {
+            "COD": 10264,
+            "NOM": "CARLOS RUIZ"
+        },
+        "referencias": [
+            {
+                "COD": "038",
+                "NOM": "Producto 38",
+                "CANT": 15,
+                "COSTO": 145.77
+            },
+            {
+                "COD": "069",
+                "NOM": "Producto 69",
+                "CANT": 17,
+                "COSTO": 51.43
+            },
+            {
+                "COD": "084",
+                "NOM": "Producto 84",
+                "CANT": 6,
+                "COSTO": 107.98
+            }
+        ],
+        "notas": [
+            {
+                "COD": "*NOTA",
+                "NOM": "Pago contra entrega"
+            }
+        ]
+    },
+    {
+        "NUM": 12357,
+        "FECHA": "2024-07-09",
+        "CLIENTES": {
+            "COD": "901276437-09",
+            "NOM": "Empresa 186 SAS",
+            "DIR": "Calle 122 # 34 - 17",
+            "CIU": "Bucaramanga"
+        },
+        "VENDEDOR": {
+            "COD": 10262,
+            "NOM": "JUAN PEREZ"
+        },
+        "referencias": [
+            {
+                "COD": "072",
+                "NOM": "Producto 72",
+                "CANT": 15,
+                "COSTO": 51.21
+            },
+            {
+                "COD": "079",
+                "NOM": "Producto 79",
+                "CANT": 10,
+                "COSTO": 49.77
+            },
+            {
+                "COD": "023",
+                "NOM": "Producto 23",
+                "CANT": 17,
+                "COSTO": 57.35
+            }
+        ],
+        "notas": [
+            {
+                "COD": "*NOTA",
+                "NOM": "Entrega en horario de oficina"
+            }
+        ]
+    },
+    {
+        "NUM": 12358,
+        "FECHA": "2024-07-27",
+        "CLIENTES": {
+            "COD": "901603069-01",
+            "NOM": "Empresa 115 SAS",
+            "DIR": "Calle 7 # 91 - 57",
+            "CIU": "Bogotá"
+        },
+        "VENDEDOR": {
+            "COD": 10264,
+            "NOM": "CARLOS RUIZ"
+        },
+        "referencias": [
+            {
+                "COD": "027",
+                "NOM": "Producto 27",
+                "CANT": 10,
+                "COSTO": 144.83
+            },
+            {
+                "COD": "093",
+                "NOM": "Producto 93",
+                "CANT": 15,
+                "COSTO": 16.01
+            },
+            {
+                "COD": "059",
+                "NOM": "Producto 59",
+                "CANT": 6,
+                "COSTO": 104.21
+            },
+            {
+                "COD": "038",
+                "NOM": "Producto 38",
+                "CANT": 6,
+                "COSTO": 79.99
+            }
+        ],
+        "notas": [
+            {
+                "COD": "*NOTA",
+                "NOM": "Entrega en horario de oficina"
+            }
+        ]
+    },
+    {
+        "NUM": 12359,
+        "FECHA": "2024-08-02",
+        "CLIENTES": {
+            "COD": "901277107-07",
+            "NOM": "Empresa 173 SAS",
+            "DIR": "Calle 54 # 59 - 17",
+            "CIU": "Bogotá"
+        },
+        "VENDEDOR": {
+            "COD": 10262,
+            "NOM": "JUAN PEREZ"
+        },
+        "referencias": [
+            {
+                "COD": "003",
+                "NOM": "Producto 3",
+                "CANT": 1,
+                "COSTO": 131.25
+            },
+            {
+                "COD": "063",
+                "NOM": "Producto 63",
+                "CANT": 13,
+                "COSTO": 8.08
+            },
+            {
+                "COD": "085",
+                "NOM": "Producto 85",
+                "CANT": 16,
+                "COSTO": 18.73
+            }
+        ],
+        "notas": [
+            {
+                "COD": "*NOTA",
+                "NOM": "Llamar antes de entregar"
+            }
+        ]
+    },
+    {
+        "NUM": 12360,
+        "FECHA": "2024-06-25",
+        "CLIENTES": {
+            "COD": "901944552-02",
+            "NOM": "Empresa 178 SAS",
+            "DIR": "Calle 133 # 91 - 15",
+            "CIU": "Bogotá"
+        },
+        "VENDEDOR": {
+            "COD": 10264,
+            "NOM": "CARLOS RUIZ"
+        },
+        "referencias": [
+            {
+                "COD": "049",
+                "NOM": "Producto 49",
+                "CANT": 18,
+                "COSTO": 143.75
+            }
+        ],
+        "notas": [
+            {
+                "COD": "*NOTA",
+                "NOM": "Entrega en horario de oficina"
+            }
+        ]
+    },
+    {
+        "NUM": 12361,
+        "FECHA": "2024-08-04",
+        "CLIENTES": {
+            "COD": "901186655-07",
+            "NOM": "Empresa 293 SAS",
+            "DIR": "Calle 74 # 31 - 5",
+            "CIU": "Barranquilla"
+        },
+        "VENDEDOR": {
+            "COD": 10264,
+            "NOM": "CARLOS RUIZ"
+        },
+        "referencias": [
+            {
+                "COD": "014",
+                "NOM": "Producto 14",
+                "CANT": 14,
+                "COSTO": 46.94
+            },
+            {
+                "COD": "007",
+                "NOM": "Producto 7",
+                "CANT": 17,
+                "COSTO": 100.08
+            },
+            {
+                "COD": "019",
+                "NOM": "Producto 19",
+                "CANT": 1,
+                "COSTO": 33.46
+            }
+        ],
+        "notas": [
+            {
+                "COD": "*NOTA",
+                "NOM": "Pago contra entrega"
+            }
+        ]
+    },
+    {
+        "NUM": 12362,
+        "FECHA": "2024-08-11",
+        "CLIENTES": {
+            "COD": "901691532-07",
+            "NOM": "Empresa 145 SAS",
+            "DIR": "Calle 143 # 56 - 23",
+            "CIU": "Medellín"
+        },
+        "VENDEDOR": {
+            "COD": 10264,
+            "NOM": "CARLOS RUIZ"
+        },
+        "referencias": [
+            {
+                "COD": "049",
+                "NOM": "Producto 49",
+                "CANT": 7,
+                "COSTO": 147.14
+            },
+            {
+                "COD": "091",
+                "NOM": "Producto 91",
+                "CANT": 12,
+                "COSTO": 123.13
+            },
+            {
+                "COD": "067",
+                "NOM": "Producto 67",
+                "CANT": 5,
+                "COSTO": 6.8
+            }
+        ],
+        "notas": [
+            {
+                "COD": "*NOTA",
+                "NOM": "Llamar antes de entregar"
+            }
+        ]
+    },
+    {
+        "NUM": 12363,
+        "FECHA": "2024-06-30",
+        "CLIENTES": {
+            "COD": "901454124-08",
+            "NOM": "Empresa 280 SAS",
+            "DIR": "Calle 127 # 87 - 92",
+            "CIU": "Bogotá"
+        },
+        "VENDEDOR": {
+            "COD": 10264,
+            "NOM": "CARLOS RUIZ"
+        },
+        "referencias": [
+            {
+                "COD": "094",
+                "NOM": "Producto 94",
+                "CANT": 4,
+                "COSTO": 88.73
+            },
+            {
+                "COD": "015",
+                "NOM": "Producto 15",
+                "CANT": 9,
+                "COSTO": 35.01
+            }
+        ],
+        "notas": [
+            {
+                "COD": "*NOTA",
+                "NOM": "Mercancía delicada"
+            }
+        ]
+    },
+    {
+        "NUM": 12364,
+        "FECHA": "2024-07-27",
+        "CLIENTES": {
+            "COD": "901568222-01",
+            "NOM": "Empresa 138 SAS",
+            "DIR": "Calle 24 # 62 - 21",
+            "CIU": "Medellín"
+        },
+        "VENDEDOR": {
+            "COD": 10262,
+            "NOM": "JUAN PEREZ"
+        },
+        "referencias": [
+            {
+                "COD": "026",
+                "NOM": "Producto 26",
+                "CANT": 16,
+                "COSTO": 123.1
+            }
+        ],
+        "notas": [
+            {
+                "COD": "*NOTA",
+                "NOM": "Dejar en portería"
+            }
+        ]
+    },
+    {
+        "NUM": 12365,
+        "FECHA": "2024-06-20",
+        "CLIENTES": {
+            "COD": "901535418-08",
+            "NOM": "Empresa 98 SAS",
+            "DIR": "Calle 13 # 96 - 45",
+            "CIU": "Cali"
+        },
+        "VENDEDOR": {
+            "COD": 10265,
+            "NOM": "ANA DIAZ"
+        },
+        "referencias": [
+            {
+                "COD": "090",
+                "NOM": "Producto 90",
+                "CANT": 10,
+                "COSTO": 74.63
+            }
+        ],
+        "notas": [
+            {
+                "COD": "*NOTA",
+                "NOM": "Pago contra entrega"
+            }
+        ]
+    },
+    {
+        "NUM": 12366,
+        "FECHA": "2024-07-17",
+        "CLIENTES": {
+            "COD": "901123133-07",
+            "NOM": "Empresa 180 SAS",
+            "DIR": "Calle 120 # 79 - 32",
+            "CIU": "Cali"
+        },
+        "VENDEDOR": {
+            "COD": 10264,
+            "NOM": "CARLOS RUIZ"
+        },
+        "referencias": [
+            {
+                "COD": "008",
+                "NOM": "Producto 8",
+                "CANT": 12,
+                "COSTO": 114.96
+            }
+        ],
+        "notas": [
+            {
+                "COD": "*NOTA",
+                "NOM": "Llamar antes de entregar"
+            }
+        ]
+    },
+    {
+        "NUM": 12367,
+        "FECHA": "2024-08-14",
+        "CLIENTES": {
+            "COD": "901914616-05",
+            "NOM": "Empresa 149 SAS",
+            "DIR": "Calle 1 # 68 - 19",
+            "CIU": "Cali"
+        },
+        "VENDEDOR": {
+            "COD": 10263,
+            "NOM": "MARIA GOMEZ"
+        },
+        "referencias": [
+            {
+                "COD": "068",
+                "NOM": "Producto 68",
+                "CANT": 10,
+                "COSTO": 89.49
+            },
+            {
+                "COD": "021",
+                "NOM": "Producto 21",
+                "CANT": 19,
+                "COSTO": 79.65
+            }
+        ],
+        "notas": [
+            {
+                "COD": "*NOTA",
+                "NOM": "Pago contra entrega"
+            }
+        ]
+    },
+    {
+        "NUM": 12368,
+        "FECHA": "2024-07-25",
+        "CLIENTES": {
+            "COD": "901484666-01",
+            "NOM": "Empresa 276 SAS",
+            "DIR": "Calle 99 # 59 - 74",
+            "CIU": "Cali"
+        },
+        "VENDEDOR": {
+            "COD": 10262,
+            "NOM": "JUAN PEREZ"
+        },
+        "referencias": [
+            {
+                "COD": "008",
+                "NOM": "Producto 8",
+                "CANT": 12,
+                "COSTO": 63.53
+            }
+        ],
+        "notas": [
+            {
+                "COD": "*NOTA",
+                "NOM": "Mercancía delicada"
+            }
+        ]
+    },
+    {
+        "NUM": 12369,
+        "FECHA": "2024-07-31",
+        "CLIENTES": {
+            "COD": "901115034-09",
+            "NOM": "Empresa 65 SAS",
+            "DIR": "Calle 31 # 31 - 85",
+            "CIU": "Bucaramanga"
+        },
+        "VENDEDOR": {
+            "COD": 10265,
+            "NOM": "ANA DIAZ"
+        },
+        "referencias": [
+            {
+                "COD": "066",
+                "NOM": "Producto 66",
+                "CANT": 17,
+                "COSTO": 144.88
+            },
+            {
+                "COD": "067",
+                "NOM": "Producto 67",
+                "CANT": 9,
+                "COSTO": 126.75
+            },
+            {
+                "COD": "025",
+                "NOM": "Producto 25",
+                "CANT": 13,
+                "COSTO": 134.95
+            },
+            {
+                "COD": "007",
+                "NOM": "Producto 7",
+                "CANT": 15,
+                "COSTO": 80.11
+            }
+        ],
+        "notas": [
+            {
+                "COD": "*NOTA",
+                "NOM": "Llamar antes de entregar"
+            }
+        ]
+    },
+    {
+        "NUM": 12370,
+        "FECHA": "2024-08-04",
+        "CLIENTES": {
+            "COD": "901313881-03",
+            "NOM": "Empresa 126 SAS",
+            "DIR": "Calle 61 # 51 - 30",
+            "CIU": "Cali"
+        },
+        "VENDEDOR": {
+            "COD": 10262,
+            "NOM": "JUAN PEREZ"
+        },
+        "referencias": [
+            {
+                "COD": "047",
+                "NOM": "Producto 47",
+                "CANT": 15,
+                "COSTO": 59.17
+            },
+            {
+                "COD": "024",
+                "NOM": "Producto 24",
+                "CANT": 8,
+                "COSTO": 114.92
+            }
+        ],
+        "notas": [
+            {
+                "COD": "*NOTA",
+                "NOM": "Mercancía delicada"
+            }
+        ]
+    },
+    {
+        "NUM": 12371,
+        "FECHA": "2024-08-11",
+        "CLIENTES": {
+            "COD": "901331496-03",
+            "NOM": "Empresa 49 SAS",
+            "DIR": "Calle 122 # 87 - 6",
+            "CIU": "Medellín"
+        },
+        "VENDEDOR": {
+            "COD": 10265,
+            "NOM": "ANA DIAZ"
+        },
+        "referencias": [
+            {
+                "COD": "078",
+                "NOM": "Producto 78",
+                "CANT": 1,
+                "COSTO": 116.91
+            }
+        ],
+        "notas": [
+            {
+                "COD": "*NOTA",
+                "NOM": "Pago contra entrega"
+            }
+        ]
+    },
+    {
+        "NUM": 12372,
+        "FECHA": "2024-07-30",
+        "CLIENTES": {
+            "COD": "901673456-03",
+            "NOM": "Empresa 39 SAS",
+            "DIR": "Calle 31 # 55 - 93",
+            "CIU": "Cali"
+        },
+        "VENDEDOR": {
+            "COD": 10263,
+            "NOM": "MARIA GOMEZ"
+        },
+        "referencias": [
+            {
+                "COD": "064",
+                "NOM": "Producto 64",
+                "CANT": 20,
+                "COSTO": 125.64
+            },
+            {
+                "COD": "070",
+                "NOM": "Producto 70",
+                "CANT": 16,
+                "COSTO": 96.12
+            },
+            {
+                "COD": "029",
+                "NOM": "Producto 29",
+                "CANT": 2,
+                "COSTO": 42.32
+            }
+        ],
+        "notas": [
+            {
+                "COD": "*NOTA",
+                "NOM": "Dejar en portería"
+            }
+        ]
+    },
+    {
+        "NUM": 12373,
+        "FECHA": "2024-07-19",
+        "CLIENTES": {
+            "COD": "901442132-02",
+            "NOM": "Empresa 91 SAS",
+            "DIR": "Calle 13 # 37 - 89",
+            "CIU": "Barranquilla"
+        },
+        "VENDEDOR": {
+            "COD": 10265,
+            "NOM": "ANA DIAZ"
+        },
+        "referencias": [
+            {
+                "COD": "018",
+                "NOM": "Producto 18",
+                "CANT": 17,
+                "COSTO": 69.61
+            },
+            {
+                "COD": "023",
+                "NOM": "Producto 23",
+                "CANT": 10,
+                "COSTO": 10.46
+            }
+        ],
+        "notas": [
+            {
+                "COD": "*NOTA",
+                "NOM": "Llamar antes de entregar"
+            }
+        ]
+    },
+    {
+        "NUM": 12374,
+        "FECHA": "2024-07-13",
+        "CLIENTES": {
+            "COD": "901634382-02",
+            "NOM": "Empresa 217 SAS",
+            "DIR": "Calle 85 # 68 - 64",
+            "CIU": "Barranquilla"
+        },
+        "VENDEDOR": {
+            "COD": 10262,
+            "NOM": "JUAN PEREZ"
+        },
+        "referencias": [
+            {
+                "COD": "035",
+                "NOM": "Producto 35",
+                "CANT": 17,
+                "COSTO": 51.31
+            }
+        ],
+        "notas": [
+            {
+                "COD": "*NOTA",
+                "NOM": "Pago contra entrega"
+            }
+        ]
+    },
+    {
+        "NUM": 12375,
+        "FECHA": "2024-06-22",
+        "CLIENTES": {
+            "COD": "901392837-03",
+            "NOM": "Empresa 84 SAS",
+            "DIR": "Calle 20 # 66 - 87",
+            "CIU": "Bucaramanga"
+        },
+        "VENDEDOR": {
+            "COD": 10264,
+            "NOM": "CARLOS RUIZ"
+        },
+        "referencias": [
+            {
+                "COD": "066",
+                "NOM": "Producto 66",
+                "CANT": 7,
+                "COSTO": 149.22
+            }
+        ],
+        "notas": [
+            {
+                "COD": "*NOTA",
+                "NOM": "Dejar en portería"
+            }
+        ]
+    },
+    {
+        "NUM": 12376,
+        "FECHA": "2024-07-06",
+        "CLIENTES": {
+            "COD": "901886887-05",
+            "NOM": "Empresa 62 SAS",
+            "DIR": "Calle 142 # 59 - 7",
+            "CIU": "Barranquilla"
+        },
+        "VENDEDOR": {
+            "COD": 10265,
+            "NOM": "ANA DIAZ"
+        },
+        "referencias": [
+            {
+                "COD": "001",
+                "NOM": "Producto 1",
+                "CANT": 18,
+                "COSTO": 89.76
+            },
+            {
+                "COD": "097",
+                "NOM": "Producto 97",
+                "CANT": 17,
+                "COSTO": 83.04
+            },
+            {
+                "COD": "100",
+                "NOM": "Producto 100",
+                "CANT": 5,
+                "COSTO": 82.88
+            }
+        ],
+        "notas": [
+            {
+                "COD": "*NOTA",
+                "NOM": "Mercancía delicada"
+            }
+        ]
+    },
+    {
+        "NUM": 12377,
+        "FECHA": "2024-07-04",
+        "CLIENTES": {
+            "COD": "901803326-08",
+            "NOM": "Empresa 142 SAS",
+            "DIR": "Calle 96 # 42 - 96",
+            "CIU": "Barranquilla"
+        },
+        "VENDEDOR": {
+            "COD": 10265,
+            "NOM": "ANA DIAZ"
+        },
+        "referencias": [
+            {
+                "COD": "022",
+                "NOM": "Producto 22",
+                "CANT": 5,
+                "COSTO": 26.02
+            },
+            {
+                "COD": "099",
+                "NOM": "Producto 99",
+                "CANT": 10,
+                "COSTO": 23.37
+            },
+            {
+                "COD": "077",
+                "NOM": "Producto 77",
+                "CANT": 13,
+                "COSTO": 50.22
+            }
+        ],
+        "notas": [
+            {
+                "COD": "*NOTA",
+                "NOM": "Entrega en horario de oficina"
+            }
+        ]
+    },
+    {
+        "NUM": 12378,
+        "FECHA": "2024-06-21",
+        "CLIENTES": {
+            "COD": "901207914-08",
+            "NOM": "Empresa 18 SAS",
+            "DIR": "Calle 139 # 71 - 4",
+            "CIU": "Cali"
+        },
+        "VENDEDOR": {
+            "COD": 10263,
+            "NOM": "MARIA GOMEZ"
+        },
+        "referencias": [
+            {
+                "COD": "026",
+                "NOM": "Producto 26",
+                "CANT": 17,
+                "COSTO": 107.97
+            },
+            {
+                "COD": "055",
+                "NOM": "Producto 55",
+                "CANT": 20,
+                "COSTO": 81.37
+            }
+        ],
+        "notas": [
+            {
+                "COD": "*NOTA",
+                "NOM": "Mercancía delicada"
+            }
+        ]
+    },
+    {
+        "NUM": 12379,
+        "FECHA": "2024-08-07",
+        "CLIENTES": {
+            "COD": "901473419-02",
+            "NOM": "Empresa 21 SAS",
+            "DIR": "Calle 34 # 6 - 29",
+            "CIU": "Medellín"
+        },
+        "VENDEDOR": {
+            "COD": 10264,
+            "NOM": "CARLOS RUIZ"
+        },
+        "referencias": [
+            {
+                "COD": "063",
+                "NOM": "Producto 63",
+                "CANT": 12,
+                "COSTO": 18.9
+            },
+            {
+                "COD": "043",
+                "NOM": "Producto 43",
+                "CANT": 15,
+                "COSTO": 98.56
+            },
+            {
+                "COD": "076",
+                "NOM": "Producto 76",
+                "CANT": 18,
+                "COSTO": 80.4
+            }
+        ],
+        "notas": [
+            {
+                "COD": "*NOTA",
+                "NOM": "Pago contra entrega"
+            }
+        ]
+    },
+    {
+        "NUM": 12380,
+        "FECHA": "2024-07-30",
+        "CLIENTES": {
+            "COD": "901230600-06",
+            "NOM": "Empresa 277 SAS",
+            "DIR": "Calle 74 # 23 - 77",
+            "CIU": "Bogotá"
+        },
+        "VENDEDOR": {
+            "COD": 10264,
+            "NOM": "CARLOS RUIZ"
+        },
+        "referencias": [
+            {
+                "COD": "054",
+                "NOM": "Producto 54",
+                "CANT": 7,
+                "COSTO": 67.22
+            },
+            {
+                "COD": "007",
+                "NOM": "Producto 7",
+                "CANT": 14,
+                "COSTO": 45.21
+            },
+            {
+                "COD": "039",
+                "NOM": "Producto 39",
+                "CANT": 7,
+                "COSTO": 123.63
+            }
+        ],
+        "notas": [
+            {
+                "COD": "*NOTA",
+                "NOM": "Entrega en horario de oficina"
+            }
+        ]
+    },
+    {
+        "NUM": 12381,
+        "FECHA": "2024-07-20",
+        "CLIENTES": {
+            "COD": "901693679-02",
+            "NOM": "Empresa 62 SAS",
+            "DIR": "Calle 68 # 28 - 18",
+            "CIU": "Barranquilla"
+        },
+        "VENDEDOR": {
+            "COD": 10264,
+            "NOM": "CARLOS RUIZ"
+        },
+        "referencias": [
+            {
+                "COD": "005",
+                "NOM": "Producto 5",
+                "CANT": 2,
+                "COSTO": 142.79
+            },
+            {
+                "COD": "062",
+                "NOM": "Producto 62",
+                "CANT": 12,
+                "COSTO": 11.28
+            }
+        ],
+        "notas": [
+            {
+                "COD": "*NOTA",
+                "NOM": "Dejar en portería"
+            }
+        ]
+    },
+    {
+        "NUM": 12382,
+        "FECHA": "2024-06-17",
+        "CLIENTES": {
+            "COD": "901728594-01",
+            "NOM": "Empresa 96 SAS",
+            "DIR": "Calle 61 # 72 - 31",
+            "CIU": "Cali"
+        },
+        "VENDEDOR": {
+            "COD": 10263,
+            "NOM": "MARIA GOMEZ"
+        },
+        "referencias": [
+            {
+                "COD": "001",
+                "NOM": "Producto 1",
+                "CANT": 8,
+                "COSTO": 44.91
+            },
+            {
+                "COD": "042",
+                "NOM": "Producto 42",
+                "CANT": 1,
+                "COSTO": 77.04
+            }
+        ],
+        "notas": [
+            {
+                "COD": "*NOTA",
+                "NOM": "Pago contra entrega"
+            }
+        ]
+    },
+    {
+        "NUM": 12383,
+        "FECHA": "2024-06-29",
+        "CLIENTES": {
+            "COD": "901860680-06",
+            "NOM": "Empresa 213 SAS",
+            "DIR": "Calle 53 # 57 - 29",
+            "CIU": "Bogotá"
+        },
+        "VENDEDOR": {
+            "COD": 10265,
+            "NOM": "ANA DIAZ"
+        },
+        "referencias": [
+            {
+                "COD": "072",
+                "NOM": "Producto 72",
+                "CANT": 12,
+                "COSTO": 14.75
+            },
+            {
+                "COD": "013",
+                "NOM": "Producto 13",
+                "CANT": 18,
+                "COSTO": 21.07
+            },
+            {
+                "COD": "053",
+                "NOM": "Producto 53",
+                "CANT": 7,
+                "COSTO": 111.88
+            },
+            {
+                "COD": "079",
+                "NOM": "Producto 79",
+                "CANT": 17,
+                "COSTO": 26.6
+            }
+        ],
+        "notas": [
+            {
+                "COD": "*NOTA",
+                "NOM": "Llamar antes de entregar"
+            }
+        ]
+    },
+    {
+        "NUM": 12384,
+        "FECHA": "2024-07-07",
+        "CLIENTES": {
+            "COD": "901814687-04",
+            "NOM": "Empresa 120 SAS",
+            "DIR": "Calle 131 # 90 - 14",
+            "CIU": "Barranquilla"
+        },
+        "VENDEDOR": {
+            "COD": 10265,
+            "NOM": "ANA DIAZ"
+        },
+        "referencias": [
+            {
+                "COD": "070",
+                "NOM": "Producto 70",
+                "CANT": 9,
+                "COSTO": 86.55
+            },
+            {
+                "COD": "074",
+                "NOM": "Producto 74",
+                "CANT": 17,
+                "COSTO": 114.61
+            }
+        ],
+        "notas": [
+            {
+                "COD": "*NOTA",
+                "NOM": "Dejar en portería"
+            }
+        ]
+    },
+    {
+        "NUM": 12385,
+        "FECHA": "2024-07-15",
+        "CLIENTES": {
+            "COD": "901557293-06",
+            "NOM": "Empresa 257 SAS",
+            "DIR": "Calle 52 # 76 - 31",
+            "CIU": "Medellín"
+        },
+        "VENDEDOR": {
+            "COD": 10265,
+            "NOM": "ANA DIAZ"
+        },
+        "referencias": [
+            {
+                "COD": "003",
+                "NOM": "Producto 3",
+                "CANT": 14,
+                "COSTO": 34.53
+            },
+            {
+                "COD": "010",
+                "NOM": "Producto 10",
+                "CANT": 5,
+                "COSTO": 122.14
+            },
+            {
+                "COD": "005",
+                "NOM": "Producto 5",
+                "CANT": 12,
+                "COSTO": 86.86
+            }
+        ],
+        "notas": [
+            {
+                "COD": "*NOTA",
+                "NOM": "Entrega en horario de oficina"
+            }
+        ]
+    },
+    {
+        "NUM": 12386,
+        "FECHA": "2024-08-03",
+        "CLIENTES": {
+            "COD": "901613806-06",
+            "NOM": "Empresa 120 SAS",
+            "DIR": "Calle 99 # 62 - 76",
+            "CIU": "Bogotá"
+        },
+        "VENDEDOR": {
+            "COD": 10263,
+            "NOM": "MARIA GOMEZ"
+        },
+        "referencias": [
+            {
+                "COD": "045",
+                "NOM": "Producto 45",
+                "CANT": 18,
+                "COSTO": 56.91
+            },
+            {
+                "COD": "031",
+                "NOM": "Producto 31",
+                "CANT": 17,
+                "COSTO": 138.61
+            },
+            {
+                "COD": "012",
+                "NOM": "Producto 12",
+                "CANT": 14,
+                "COSTO": 54.84
+            },
+            {
+                "COD": "047",
+                "NOM": "Producto 47",
+                "CANT": 14,
+                "COSTO": 30.32
+            }
+        ],
+        "notas": [
+            {
+                "COD": "*NOTA",
+                "NOM": "Llamar antes de entregar"
+            }
+        ]
+    },
+    {
+        "NUM": 12387,
+        "FECHA": "2024-06-25",
+        "CLIENTES": {
+            "COD": "901312773-06",
+            "NOM": "Empresa 41 SAS",
+            "DIR": "Calle 87 # 40 - 76",
+            "CIU": "Medellín"
+        },
+        "VENDEDOR": {
+            "COD": 10263,
+            "NOM": "MARIA GOMEZ"
+        },
+        "referencias": [
+            {
+                "COD": "095",
+                "NOM": "Producto 95",
+                "CANT": 20,
+                "COSTO": 16.5
+            }
+        ],
+        "notas": [
+            {
+                "COD": "*NOTA",
+                "NOM": "Mercancía delicada"
+            }
+        ]
+    },
+    {
+        "NUM": 12388,
+        "FECHA": "2024-07-23",
+        "CLIENTES": {
+            "COD": "901921881-08",
+            "NOM": "Empresa 225 SAS",
+            "DIR": "Calle 147 # 30 - 82",
+            "CIU": "Cali"
+        },
+        "VENDEDOR": {
+            "COD": 10265,
+            "NOM": "ANA DIAZ"
+        },
+        "referencias": [
+            {
+                "COD": "064",
+                "NOM": "Producto 64",
+                "CANT": 7,
+                "COSTO": 86.69
+            },
+            {
+                "COD": "092",
+                "NOM": "Producto 92",
+                "CANT": 16,
+                "COSTO": 60.06
+            }
+        ],
+        "notas": [
+            {
+                "COD": "*NOTA",
+                "NOM": "Entrega en horario de oficina"
+            }
+        ]
+    },
+    {
+        "NUM": 12389,
+        "FECHA": "2024-07-16",
+        "CLIENTES": {
+            "COD": "901165602-07",
+            "NOM": "Empresa 283 SAS",
+            "DIR": "Calle 112 # 46 - 9",
+            "CIU": "Bogotá"
+        },
+        "VENDEDOR": {
+            "COD": 10262,
+            "NOM": "JUAN PEREZ"
+        },
+        "referencias": [
+            {
+                "COD": "062",
+                "NOM": "Producto 62",
+                "CANT": 4,
+                "COSTO": 39.92
+            },
+            {
+                "COD": "065",
+                "NOM": "Producto 65",
+                "CANT": 15,
+                "COSTO": 9.17
+            },
+            {
+                "COD": "041",
+                "NOM": "Producto 41",
+                "CANT": 11,
+                "COSTO": 6.72
+            },
+            {
+                "COD": "054",
+                "NOM": "Producto 54",
+                "CANT": 19,
+                "COSTO": 117.12
+            }
+        ],
+        "notas": [
+            {
+                "COD": "*NOTA",
+                "NOM": "Mercancía delicada"
+            }
+        ]
+    },
+    {
+        "NUM": 12390,
+        "FECHA": "2024-07-17",
+        "CLIENTES": {
+            "COD": "901425730-09",
+            "NOM": "Empresa 165 SAS",
+            "DIR": "Calle 52 # 99 - 14",
+            "CIU": "Medellín"
+        },
+        "VENDEDOR": {
+            "COD": 10264,
+            "NOM": "CARLOS RUIZ"
+        },
+        "referencias": [
+            {
+                "COD": "009",
+                "NOM": "Producto 9",
+                "CANT": 12,
+                "COSTO": 50.41
+            },
+            {
+                "COD": "035",
+                "NOM": "Producto 35",
+                "CANT": 15,
+                "COSTO": 141.46
+            },
+            {
+                "COD": "022",
+                "NOM": "Producto 22",
+                "CANT": 4,
+                "COSTO": 88.22
+            },
+            {
+                "COD": "100",
+                "NOM": "Producto 100",
+                "CANT": 13,
+                "COSTO": 102.85
+            }
+        ],
+        "notas": [
+            {
+                "COD": "*NOTA",
+                "NOM": "Pago contra entrega"
+            }
+        ]
+    },
+    {
+        "NUM": 12391,
+        "FECHA": "2024-07-02",
+        "CLIENTES": {
+            "COD": "901224565-03",
+            "NOM": "Empresa 124 SAS",
+            "DIR": "Calle 25 # 98 - 95",
+            "CIU": "Barranquilla"
+        },
+        "VENDEDOR": {
+            "COD": 10263,
+            "NOM": "MARIA GOMEZ"
+        },
+        "referencias": [
+            {
+                "COD": "029",
+                "NOM": "Producto 29",
+                "CANT": 1,
+                "COSTO": 28.96
+            },
+            {
+                "COD": "055",
+                "NOM": "Producto 55",
+                "CANT": 3,
+                "COSTO": 77.75
+            },
+            {
+                "COD": "075",
+                "NOM": "Producto 75",
+                "CANT": 10,
+                "COSTO": 44.2
+            },
+            {
+                "COD": "086",
+                "NOM": "Producto 86",
+                "CANT": 20,
+                "COSTO": 5.25
+            }
+        ],
+        "notas": [
+            {
+                "COD": "*NOTA",
+                "NOM": "Dejar en portería"
+            }
+        ]
+    },
+    {
+        "NUM": 12392,
+        "FECHA": "2024-07-14",
+        "CLIENTES": {
+            "COD": "901698491-04",
+            "NOM": "Empresa 250 SAS",
+            "DIR": "Calle 32 # 80 - 46",
+            "CIU": "Barranquilla"
+        },
+        "VENDEDOR": {
+            "COD": 10263,
+            "NOM": "MARIA GOMEZ"
+        },
+        "referencias": [
+            {
+                "COD": "023",
+                "NOM": "Producto 23",
+                "CANT": 9,
+                "COSTO": 64.16
+            },
+            {
+                "COD": "030",
+                "NOM": "Producto 30",
+                "CANT": 13,
+                "COSTO": 145.12
+            },
+            {
+                "COD": "079",
+                "NOM": "Producto 79",
+                "CANT": 20,
+                "COSTO": 5.82
+            },
+            {
+                "COD": "026",
+                "NOM": "Producto 26",
+                "CANT": 2,
+                "COSTO": 83.07
+            }
+        ],
+        "notas": [
+            {
+                "COD": "*NOTA",
+                "NOM": "Mercancía delicada"
+            }
+        ]
+    },
+    {
+        "NUM": 12393,
+        "FECHA": "2024-07-15",
+        "CLIENTES": {
+            "COD": "901955583-07",
+            "NOM": "Empresa 201 SAS",
+            "DIR": "Calle 34 # 92 - 7",
+            "CIU": "Medellín"
+        },
+        "VENDEDOR": {
+            "COD": 10263,
+            "NOM": "MARIA GOMEZ"
+        },
+        "referencias": [
+            {
+                "COD": "062",
+                "NOM": "Producto 62",
+                "CANT": 9,
+                "COSTO": 131.2
+            },
+            {
+                "COD": "086",
+                "NOM": "Producto 86",
+                "CANT": 1,
+                "COSTO": 70.47
+            },
+            {
+                "COD": "092",
+                "NOM": "Producto 92",
+                "CANT": 15,
+                "COSTO": 142.65
+            }
+        ],
+        "notas": [
+            {
+                "COD": "*NOTA",
+                "NOM": "Llamar antes de entregar"
+            }
+        ]
+    },
+    {
+        "NUM": 12394,
+        "FECHA": "2024-06-21",
+        "CLIENTES": {
+            "COD": "901796522-05",
+            "NOM": "Empresa 252 SAS",
+            "DIR": "Calle 11 # 44 - 40",
+            "CIU": "Medellín"
+        },
+        "VENDEDOR": {
+            "COD": 10264,
+            "NOM": "CARLOS RUIZ"
+        },
+        "referencias": [
+            {
+                "COD": "052",
+                "NOM": "Producto 52",
+                "CANT": 20,
+                "COSTO": 116.73
+            },
+            {
+                "COD": "095",
+                "NOM": "Producto 95",
+                "CANT": 12,
+                "COSTO": 24.7
+            }
+        ],
+        "notas": [
+            {
+                "COD": "*NOTA",
+                "NOM": "Llamar antes de entregar"
+            }
+        ]
+    },
+    {
+        "NUM": 12395,
+        "FECHA": "2024-07-04",
+        "CLIENTES": {
+            "COD": "901589958-08",
+            "NOM": "Empresa 247 SAS",
+            "DIR": "Calle 98 # 27 - 60",
+            "CIU": "Barranquilla"
+        },
+        "VENDEDOR": {
+            "COD": 10262,
+            "NOM": "JUAN PEREZ"
+        },
+        "referencias": [
+            {
+                "COD": "080",
+                "NOM": "Producto 80",
+                "CANT": 15,
+                "COSTO": 46.84
+            },
+            {
+                "COD": "086",
+                "NOM": "Producto 86",
+                "CANT": 5,
+                "COSTO": 59.67
+            },
+            {
+                "COD": "049",
+                "NOM": "Producto 49",
+                "CANT": 9,
+                "COSTO": 149.56
+            }
+        ],
+        "notas": [
+            {
+                "COD": "*NOTA",
+                "NOM": "Pago contra entrega"
+            }
+        ]
+    },
+    {
+        "NUM": 12396,
+        "FECHA": "2024-08-08",
+        "CLIENTES": {
+            "COD": "901343004-08",
+            "NOM": "Empresa 203 SAS",
+            "DIR": "Calle 31 # 20 - 99",
+            "CIU": "Cali"
+        },
+        "VENDEDOR": {
+            "COD": 10262,
+            "NOM": "JUAN PEREZ"
+        },
+        "referencias": [
+            {
+                "COD": "005",
+                "NOM": "Producto 5",
+                "CANT": 11,
+                "COSTO": 40.52
+            },
+            {
+                "COD": "010",
+                "NOM": "Producto 10",
+                "CANT": 10,
+                "COSTO": 14.64
+            },
+            {
+                "COD": "045",
+                "NOM": "Producto 45",
+                "CANT": 9,
+                "COSTO": 139.64
+            },
+            {
+                "COD": "024",
+                "NOM": "Producto 24",
+                "CANT": 19,
+                "COSTO": 106.13
+            }
+        ],
+        "notas": [
+            {
+                "COD": "*NOTA",
+                "NOM": "Dejar en portería"
+            }
+        ]
+    },
+    {
+        "NUM": 12397,
+        "FECHA": "2024-08-06",
+        "CLIENTES": {
+            "COD": "901824368-02",
+            "NOM": "Empresa 284 SAS",
+            "DIR": "Calle 54 # 42 - 82",
+            "CIU": "Barranquilla"
+        },
+        "VENDEDOR": {
+            "COD": 10263,
+            "NOM": "MARIA GOMEZ"
+        },
+        "referencias": [
+            {
+                "COD": "058",
+                "NOM": "Producto 58",
+                "CANT": 7,
+                "COSTO": 55.44
+            },
+            {
+                "COD": "053",
+                "NOM": "Producto 53",
+                "CANT": 7,
+                "COSTO": 51.19
+            },
+            {
+                "COD": "077",
+                "NOM": "Producto 77",
+                "CANT": 4,
+                "COSTO": 13.58
+            },
+            {
+                "COD": "100",
+                "NOM": "Producto 100",
+                "CANT": 20,
+                "COSTO": 108.77
+            }
+        ],
+        "notas": [
+            {
+                "COD": "*NOTA",
+                "NOM": "Entrega en horario de oficina"
+            }
+        ]
+    },
+    {
+        "NUM": 12398,
+        "FECHA": "2024-06-16",
+        "CLIENTES": {
+            "COD": "901442524-08",
+            "NOM": "Empresa 159 SAS",
+            "DIR": "Calle 38 # 80 - 19",
+            "CIU": "Cali"
+        },
+        "VENDEDOR": {
+            "COD": 10262,
+            "NOM": "JUAN PEREZ"
+        },
+        "referencias": [
+            {
+                "COD": "083",
+                "NOM": "Producto 83",
+                "CANT": 14,
+                "COSTO": 55.52
+            },
+            {
+                "COD": "053",
+                "NOM": "Producto 53",
+                "CANT": 18,
+                "COSTO": 20.29
+            },
+            {
+                "COD": "086",
+                "NOM": "Producto 86",
+                "CANT": 17,
+                "COSTO": 116.78
+            },
+            {
+                "COD": "078",
+                "NOM": "Producto 78",
+                "CANT": 8,
+                "COSTO": 113.01
+            }
+        ],
+        "notas": [
+            {
+                "COD": "*NOTA",
+                "NOM": "Dejar en portería"
+            }
+        ]
+    },
+    {
+        "NUM": 12399,
+        "FECHA": "2024-07-16",
+        "CLIENTES": {
+            "COD": "901592411-06",
+            "NOM": "Empresa 88 SAS",
+            "DIR": "Calle 61 # 53 - 45",
+            "CIU": "Bogotá"
+        },
+        "VENDEDOR": {
+            "COD": 10263,
+            "NOM": "MARIA GOMEZ"
+        },
+        "referencias": [
+            {
+                "COD": "090",
+                "NOM": "Producto 90",
+                "CANT": 4,
+                "COSTO": 82.25
+            },
+            {
+                "COD": "034",
+                "NOM": "Producto 34",
+                "CANT": 15,
+                "COSTO": 9.76
+            },
+            {
+                "COD": "093",
+                "NOM": "Producto 93",
+                "CANT": 15,
+                "COSTO": 63.18
+            }
+        ],
+        "notas": [
+            {
+                "COD": "*NOTA",
+                "NOM": "Pago contra entrega"
+            }
+        ]
+    },
+    {
+        "NUM": 12400,
+        "FECHA": "2024-07-27",
+        "CLIENTES": {
+            "COD": "901453676-07",
+            "NOM": "Empresa 214 SAS",
+            "DIR": "Calle 82 # 3 - 37",
+            "CIU": "Bogotá"
+        },
+        "VENDEDOR": {
+            "COD": 10262,
+            "NOM": "JUAN PEREZ"
+        },
+        "referencias": [
+            {
+                "COD": "009",
+                "NOM": "Producto 9",
+                "CANT": 12,
+                "COSTO": 87.62
+            },
+            {
+                "COD": "088",
+                "NOM": "Producto 88",
+                "CANT": 2,
+                "COSTO": 73.89
+            },
+            {
+                "COD": "092",
+                "NOM": "Producto 92",
+                "CANT": 20,
+                "COSTO": 82.74
+            },
+            {
+                "COD": "034",
+                "NOM": "Producto 34",
+                "CANT": 13,
+                "COSTO": 6.83
+            }
+        ],
+        "notas": [
+            {
+                "COD": "*NOTA",
+                "NOM": "Dejar en portería"
+            }
+        ]
+    },
+    {
+        "NUM": 12401,
+        "FECHA": "2024-07-18",
+        "CLIENTES": {
+            "COD": "901635803-06",
+            "NOM": "Empresa 163 SAS",
+            "DIR": "Calle 107 # 64 - 42",
+            "CIU": "Bucaramanga"
+        },
+        "VENDEDOR": {
+            "COD": 10264,
+            "NOM": "CARLOS RUIZ"
+        },
+        "referencias": [
+            {
+                "COD": "040",
+                "NOM": "Producto 40",
+                "CANT": 4,
+                "COSTO": 10.56
+            },
+            {
+                "COD": "062",
+                "NOM": "Producto 62",
+                "CANT": 4,
+                "COSTO": 122.18
+            }
+        ],
+        "notas": [
+            {
+                "COD": "*NOTA",
+                "NOM": "Mercancía delicada"
+            }
+        ]
+    },
+    {
+        "NUM": 12402,
+        "FECHA": "2024-07-18",
+        "CLIENTES": {
+            "COD": "901636836-09",
+            "NOM": "Empresa 210 SAS",
+            "DIR": "Calle 2 # 85 - 60",
+            "CIU": "Medellín"
+        },
+        "VENDEDOR": {
+            "COD": 10263,
+            "NOM": "MARIA GOMEZ"
+        },
+        "referencias": [
+            {
+                "COD": "074",
+                "NOM": "Producto 74",
+                "CANT": 13,
+                "COSTO": 139.78
+            },
+            {
+                "COD": "057",
+                "NOM": "Producto 57",
+                "CANT": 1,
+                "COSTO": 55.39
+            },
+            {
+                "COD": "042",
+                "NOM": "Producto 42",
+                "CANT": 13,
+                "COSTO": 93.79
+            }
+        ],
+        "notas": [
+            {
+                "COD": "*NOTA",
+                "NOM": "Dejar en portería"
+            }
+        ]
+    },
+    {
+        "NUM": 12403,
+        "FECHA": "2024-06-18",
+        "CLIENTES": {
+            "COD": "901668714-03",
+            "NOM": "Empresa 287 SAS",
+            "DIR": "Calle 45 # 77 - 71",
+            "CIU": "Medellín"
+        },
+        "VENDEDOR": {
+            "COD": 10263,
+            "NOM": "MARIA GOMEZ"
+        },
+        "referencias": [
+            {
+                "COD": "012",
+                "NOM": "Producto 12",
+                "CANT": 14,
+                "COSTO": 83.44
+            }
+        ],
+        "notas": [
+            {
+                "COD": "*NOTA",
+                "NOM": "Llamar antes de entregar"
+            }
+        ]
+    },
+    {
+        "NUM": 12404,
+        "FECHA": "2024-06-16",
+        "CLIENTES": {
+            "COD": "901723348-08",
+            "NOM": "Empresa 138 SAS",
+            "DIR": "Calle 137 # 25 - 25",
+            "CIU": "Cali"
+        },
+        "VENDEDOR": {
+            "COD": 10262,
+            "NOM": "JUAN PEREZ"
+        },
+        "referencias": [
+            {
+                "COD": "010",
+                "NOM": "Producto 10",
+                "CANT": 2,
+                "COSTO": 46.15
+            },
+            {
+                "COD": "083",
+                "NOM": "Producto 83",
+                "CANT": 17,
+                "COSTO": 116.43
+            },
+            {
+                "COD": "058",
+                "NOM": "Producto 58",
+                "CANT": 3,
+                "COSTO": 8.07
+            },
+            {
+                "COD": "050",
+                "NOM": "Producto 50",
+                "CANT": 6,
+                "COSTO": 45.22
+            }
+        ],
+        "notas": [
+            {
+                "COD": "*NOTA",
+                "NOM": "Entrega en horario de oficina"
+            }
+        ]
+    },
+    {
+        "NUM": 12405,
+        "FECHA": "2024-08-07",
+        "CLIENTES": {
+            "COD": "901562360-06",
+            "NOM": "Empresa 295 SAS",
+            "DIR": "Calle 41 # 37 - 53",
+            "CIU": "Medellín"
+        },
+        "VENDEDOR": {
+            "COD": 10263,
+            "NOM": "MARIA GOMEZ"
+        },
+        "referencias": [
+            {
+                "COD": "092",
+                "NOM": "Producto 92",
+                "CANT": 9,
+                "COSTO": 64.09
+            }
+        ],
+        "notas": [
+            {
+                "COD": "*NOTA",
+                "NOM": "Entrega en horario de oficina"
+            }
+        ]
+    },
+    {
+        "NUM": 12406,
+        "FECHA": "2024-07-16",
+        "CLIENTES": {
+            "COD": "901584607-02",
+            "NOM": "Empresa 180 SAS",
+            "DIR": "Calle 41 # 38 - 74",
+            "CIU": "Bucaramanga"
+        },
+        "VENDEDOR": {
+            "COD": 10264,
+            "NOM": "CARLOS RUIZ"
+        },
+        "referencias": [
+            {
+                "COD": "040",
+                "NOM": "Producto 40",
+                "CANT": 15,
+                "COSTO": 147.45
+            },
+            {
+                "COD": "029",
+                "NOM": "Producto 29",
+                "CANT": 5,
+                "COSTO": 64.72
+            }
+        ],
+        "notas": [
+            {
+                "COD": "*NOTA",
+                "NOM": "Mercancía delicada"
+            }
+        ]
+    },
+    {
+        "NUM": 12407,
+        "FECHA": "2024-07-10",
+        "CLIENTES": {
+            "COD": "901965018-02",
+            "NOM": "Empresa 41 SAS",
+            "DIR": "Calle 107 # 56 - 11",
+            "CIU": "Cali"
+        },
+        "VENDEDOR": {
+            "COD": 10262,
+            "NOM": "JUAN PEREZ"
+        },
+        "referencias": [
+            {
+                "COD": "082",
+                "NOM": "Producto 82",
+                "CANT": 9,
+                "COSTO": 55.33
+            }
+        ],
+        "notas": [
+            {
+                "COD": "*NOTA",
+                "NOM": "Pago contra entrega"
+            }
+        ]
+    },
+    {
+        "NUM": 12408,
+        "FECHA": "2024-07-17",
+        "CLIENTES": {
+            "COD": "901148344-07",
+            "NOM": "Empresa 244 SAS",
+            "DIR": "Calle 4 # 20 - 44",
+            "CIU": "Bucaramanga"
+        },
+        "VENDEDOR": {
+            "COD": 10265,
+            "NOM": "ANA DIAZ"
+        },
+        "referencias": [
+            {
+                "COD": "028",
+                "NOM": "Producto 28",
+                "CANT": 2,
+                "COSTO": 39.8
+            }
+        ],
+        "notas": [
+            {
+                "COD": "*NOTA",
+                "NOM": "Mercancía delicada"
+            }
+        ]
+    },
+    {
+        "NUM": 12409,
+        "FECHA": "2024-06-28",
+        "CLIENTES": {
+            "COD": "901485759-07",
+            "NOM": "Empresa 248 SAS",
+            "DIR": "Calle 75 # 54 - 58",
+            "CIU": "Barranquilla"
+        },
+        "VENDEDOR": {
+            "COD": 10265,
+            "NOM": "ANA DIAZ"
+        },
+        "referencias": [
+            {
+                "COD": "064",
+                "NOM": "Producto 64",
+                "CANT": 19,
+                "COSTO": 72.31
+            },
+            {
+                "COD": "018",
+                "NOM": "Producto 18",
+                "CANT": 3,
+                "COSTO": 15.76
+            }
+        ],
+        "notas": [
+            {
+                "COD": "*NOTA",
+                "NOM": "Dejar en portería"
+            }
+        ]
+    },
+    {
+        "NUM": 12410,
+        "FECHA": "2024-07-21",
+        "CLIENTES": {
+            "COD": "901579759-09",
+            "NOM": "Empresa 231 SAS",
+            "DIR": "Calle 13 # 7 - 88",
+            "CIU": "Bucaramanga"
+        },
+        "VENDEDOR": {
+            "COD": 10263,
+            "NOM": "MARIA GOMEZ"
+        },
+        "referencias": [
+            {
+                "COD": "037",
+                "NOM": "Producto 37",
+                "CANT": 4,
+                "COSTO": 6.19
+            },
+            {
+                "COD": "068",
+                "NOM": "Producto 68",
+                "CANT": 3,
+                "COSTO": 121.36
+            }
+        ],
+        "notas": [
+            {
+                "COD": "*NOTA",
+                "NOM": "Dejar en portería"
+            }
+        ]
+    },
+    {
+        "NUM": 12411,
+        "FECHA": "2024-06-20",
+        "CLIENTES": {
+            "COD": "901538304-08",
+            "NOM": "Empresa 87 SAS",
+            "DIR": "Calle 50 # 44 - 81",
+            "CIU": "Bucaramanga"
+        },
+        "VENDEDOR": {
+            "COD": 10265,
+            "NOM": "ANA DIAZ"
+        },
+        "referencias": [
+            {
+                "COD": "028",
+                "NOM": "Producto 28",
+                "CANT": 16,
+                "COSTO": 129.3
+            },
+            {
+                "COD": "079",
+                "NOM": "Producto 79",
+                "CANT": 9,
+                "COSTO": 46.01
+            },
+            {
+                "COD": "003",
+                "NOM": "Producto 3",
+                "CANT": 14,
+                "COSTO": 137.68
+            },
+            {
+                "COD": "040",
+                "NOM": "Producto 40",
+                "CANT": 3,
+                "COSTO": 120.69
+            }
+        ],
+        "notas": [
+            {
+                "COD": "*NOTA",
+                "NOM": "Pago contra entrega"
+            }
+        ]
+    },
+    {
+        "NUM": 12412,
+        "FECHA": "2024-06-25",
+        "CLIENTES": {
+            "COD": "901209403-08",
+            "NOM": "Empresa 222 SAS",
+            "DIR": "Calle 22 # 75 - 11",
+            "CIU": "Bucaramanga"
+        },
+        "VENDEDOR": {
+            "COD": 10263,
+            "NOM": "MARIA GOMEZ"
+        },
+        "referencias": [
+            {
+                "COD": "073",
+                "NOM": "Producto 73",
+                "CANT": 20,
+                "COSTO": 125.01
+            },
+            {
+                "COD": "020",
+                "NOM": "Producto 20",
+                "CANT": 1,
+                "COSTO": 134.03
+            },
+            {
+                "COD": "092",
+                "NOM": "Producto 92",
+                "CANT": 20,
+                "COSTO": 15.1
+            },
+            {
+                "COD": "010",
+                "NOM": "Producto 10",
+                "CANT": 18,
+                "COSTO": 118.14
+            }
+        ],
+        "notas": [
+            {
+                "COD": "*NOTA",
+                "NOM": "Dejar en portería"
+            }
+        ]
+    },
+    {
+        "NUM": 12413,
+        "FECHA": "2024-07-06",
+        "CLIENTES": {
+            "COD": "901864284-07",
+            "NOM": "Empresa 148 SAS",
+            "DIR": "Calle 45 # 81 - 13",
+            "CIU": "Bogotá"
+        },
+        "VENDEDOR": {
+            "COD": 10264,
+            "NOM": "CARLOS RUIZ"
+        },
+        "referencias": [
+            {
+                "COD": "067",
+                "NOM": "Producto 67",
+                "CANT": 11,
+                "COSTO": 15.23
+            },
+            {
+                "COD": "024",
+                "NOM": "Producto 24",
+                "CANT": 14,
+                "COSTO": 12.34
+            },
+            {
+                "COD": "017",
+                "NOM": "Producto 17",
+                "CANT": 13,
+                "COSTO": 8.44
+            }
+        ],
+        "notas": [
+            {
+                "COD": "*NOTA",
+                "NOM": "Llamar antes de entregar"
+            }
+        ]
+    },
+    {
+        "NUM": 12414,
+        "FECHA": "2024-06-19",
+        "CLIENTES": {
+            "COD": "901852012-09",
+            "NOM": "Empresa 45 SAS",
+            "DIR": "Calle 46 # 13 - 70",
+            "CIU": "Bogotá"
+        },
+        "VENDEDOR": {
+            "COD": 10263,
+            "NOM": "MARIA GOMEZ"
+        },
+        "referencias": [
+            {
+                "COD": "048",
+                "NOM": "Producto 48",
+                "CANT": 12,
+                "COSTO": 62.28
+            },
+            {
+                "COD": "090",
+                "NOM": "Producto 90",
+                "CANT": 12,
+                "COSTO": 75.79
+            },
+            {
+                "COD": "096",
+                "NOM": "Producto 96",
+                "CANT": 8,
+                "COSTO": 50.63
+            }
+        ],
+        "notas": [
+            {
+                "COD": "*NOTA",
+                "NOM": "Pago contra entrega"
+            }
+        ]
+    },
+    {
+        "NUM": 12415,
+        "FECHA": "2024-07-23",
+        "CLIENTES": {
+            "COD": "901766851-07",
+            "NOM": "Empresa 102 SAS",
+            "DIR": "Calle 130 # 84 - 60",
+            "CIU": "Barranquilla"
+        },
+        "VENDEDOR": {
+            "COD": 10265,
+            "NOM": "ANA DIAZ"
+        },
+        "referencias": [
+            {
+                "COD": "059",
+                "NOM": "Producto 59",
+                "CANT": 8,
+                "COSTO": 11.98
+            },
+            {
+                "COD": "044",
+                "NOM": "Producto 44",
+                "CANT": 13,
+                "COSTO": 133.12
+            }
+        ],
+        "notas": [
+            {
+                "COD": "*NOTA",
+                "NOM": "Llamar antes de entregar"
+            }
+        ]
+    },
+    {
+        "NUM": 12416,
+        "FECHA": "2024-08-04",
+        "CLIENTES": {
+            "COD": "901897614-07",
+            "NOM": "Empresa 188 SAS",
+            "DIR": "Calle 25 # 24 - 42",
+            "CIU": "Cali"
+        },
+        "VENDEDOR": {
+            "COD": 10262,
+            "NOM": "JUAN PEREZ"
+        },
+        "referencias": [
+            {
+                "COD": "005",
+                "NOM": "Producto 5",
+                "CANT": 7,
+                "COSTO": 120.36
+            },
+            {
+                "COD": "029",
+                "NOM": "Producto 29",
+                "CANT": 12,
+                "COSTO": 124.63
+            }
+        ],
+        "notas": [
+            {
+                "COD": "*NOTA",
+                "NOM": "Entrega en horario de oficina"
+            }
+        ]
+    },
+    {
+        "NUM": 12417,
+        "FECHA": "2024-08-11",
+        "CLIENTES": {
+            "COD": "901501319-04",
+            "NOM": "Empresa 134 SAS",
+            "DIR": "Calle 75 # 85 - 1",
+            "CIU": "Cali"
+        },
+        "VENDEDOR": {
+            "COD": 10264,
+            "NOM": "CARLOS RUIZ"
+        },
+        "referencias": [
+            {
+                "COD": "032",
+                "NOM": "Producto 32",
+                "CANT": 10,
+                "COSTO": 40.28
+            },
+            {
+                "COD": "026",
+                "NOM": "Producto 26",
+                "CANT": 1,
+                "COSTO": 34.71
+            },
+            {
+                "COD": "020",
+                "NOM": "Producto 20",
+                "CANT": 20,
+                "COSTO": 107.66
+            },
+            {
+                "COD": "003",
+                "NOM": "Producto 3",
+                "CANT": 15,
+                "COSTO": 27.59
+            }
+        ],
+        "notas": [
+            {
+                "COD": "*NOTA",
+                "NOM": "Dejar en portería"
+            }
+        ]
+    },
+    {
+        "NUM": 12418,
+        "FECHA": "2024-06-29",
+        "CLIENTES": {
+            "COD": "901553282-09",
+            "NOM": "Empresa 9 SAS",
+            "DIR": "Calle 32 # 94 - 34",
+            "CIU": "Bucaramanga"
+        },
+        "VENDEDOR": {
+            "COD": 10263,
+            "NOM": "MARIA GOMEZ"
+        },
+        "referencias": [
+            {
+                "COD": "029",
+                "NOM": "Producto 29",
+                "CANT": 8,
+                "COSTO": 32.13
+            }
+        ],
+        "notas": [
+            {
+                "COD": "*NOTA",
+                "NOM": "Pago contra entrega"
+            }
+        ]
+    },
+    {
+        "NUM": 12419,
+        "FECHA": "2024-08-05",
+        "CLIENTES": {
+            "COD": "901651500-08",
+            "NOM": "Empresa 284 SAS",
+            "DIR": "Calle 144 # 79 - 82",
+            "CIU": "Cali"
+        },
+        "VENDEDOR": {
+            "COD": 10262,
+            "NOM": "JUAN PEREZ"
+        },
+        "referencias": [
+            {
+                "COD": "073",
+                "NOM": "Producto 73",
+                "CANT": 13,
+                "COSTO": 104.86
+            }
+        ],
+        "notas": [
+            {
+                "COD": "*NOTA",
+                "NOM": "Mercancía delicada"
+            }
+        ]
+    },
+    {
+        "NUM": 12420,
+        "FECHA": "2024-07-11",
+        "CLIENTES": {
+            "COD": "901302936-06",
+            "NOM": "Empresa 199 SAS",
+            "DIR": "Calle 111 # 66 - 44",
+            "CIU": "Medellín"
+        },
+        "VENDEDOR": {
+            "COD": 10263,
+            "NOM": "MARIA GOMEZ"
+        },
+        "referencias": [
+            {
+                "COD": "031",
+                "NOM": "Producto 31",
+                "CANT": 10,
+                "COSTO": 140.64
+            },
+            {
+                "COD": "089",
+                "NOM": "Producto 89",
+                "CANT": 5,
+                "COSTO": 34.81
+            }
+        ],
+        "notas": [
+            {
+                "COD": "*NOTA",
+                "NOM": "Llamar antes de entregar"
+            }
+        ]
+    },
+    {
+        "NUM": 12421,
+        "FECHA": "2024-07-15",
+        "CLIENTES": {
+            "COD": "901815863-08",
+            "NOM": "Empresa 185 SAS",
+            "DIR": "Calle 128 # 49 - 79",
+            "CIU": "Cali"
+        },
+        "VENDEDOR": {
+            "COD": 10263,
+            "NOM": "MARIA GOMEZ"
+        },
+        "referencias": [
+            {
+                "COD": "068",
+                "NOM": "Producto 68",
+                "CANT": 15,
+                "COSTO": 144.03
+            }
+        ],
+        "notas": [
+            {
+                "COD": "*NOTA",
+                "NOM": "Mercancía delicada"
+            }
+        ]
+    },
+    {
+        "NUM": 12422,
+        "FECHA": "2024-08-12",
+        "CLIENTES": {
+            "COD": "901581632-09",
+            "NOM": "Empresa 273 SAS",
+            "DIR": "Calle 8 # 80 - 8",
+            "CIU": "Bucaramanga"
+        },
+        "VENDEDOR": {
+            "COD": 10262,
+            "NOM": "JUAN PEREZ"
+        },
+        "referencias": [
+            {
+                "COD": "018",
+                "NOM": "Producto 18",
+                "CANT": 2,
+                "COSTO": 56.34
+            }
+        ],
+        "notas": [
+            {
+                "COD": "*NOTA",
+                "NOM": "Pago contra entrega"
+            }
+        ]
+    },
+    {
+        "NUM": 12423,
+        "FECHA": "2024-07-25",
+        "CLIENTES": {
+            "COD": "901265939-02",
+            "NOM": "Empresa 39 SAS",
+            "DIR": "Calle 143 # 65 - 24",
+            "CIU": "Bogotá"
+        },
+        "VENDEDOR": {
+            "COD": 10264,
+            "NOM": "CARLOS RUIZ"
+        },
+        "referencias": [
+            {
+                "COD": "066",
+                "NOM": "Producto 66",
+                "CANT": 13,
+                "COSTO": 95.1
+            },
+            {
+                "COD": "081",
+                "NOM": "Producto 81",
+                "CANT": 16,
+                "COSTO": 87.95
+            },
+            {
+                "COD": "088",
+                "NOM": "Producto 88",
+                "CANT": 11,
+                "COSTO": 26.12
+            },
+            {
+                "COD": "007",
+                "NOM": "Producto 7",
+                "CANT": 14,
+                "COSTO": 27.06
+            }
+        ],
+        "notas": [
+            {
+                "COD": "*NOTA",
+                "NOM": "Llamar antes de entregar"
+            }
+        ]
+    },
+    {
+        "NUM": 12424,
+        "FECHA": "2024-07-22",
+        "CLIENTES": {
+            "COD": "901159626-01",
+            "NOM": "Empresa 29 SAS",
+            "DIR": "Calle 54 # 5 - 49",
+            "CIU": "Medellín"
+        },
+        "VENDEDOR": {
+            "COD": 10264,
+            "NOM": "CARLOS RUIZ"
+        },
+        "referencias": [
+            {
+                "COD": "018",
+                "NOM": "Producto 18",
+                "CANT": 20,
+                "COSTO": 86.87
+            },
+            {
+                "COD": "099",
+                "NOM": "Producto 99",
+                "CANT": 11,
+                "COSTO": 37.34
+            }
+        ],
+        "notas": [
+            {
+                "COD": "*NOTA",
+                "NOM": "Pago contra entrega"
+            }
+        ]
+    },
+    {
+        "NUM": 12425,
+        "FECHA": "2024-07-23",
+        "CLIENTES": {
+            "COD": "901813871-07",
+            "NOM": "Empresa 41 SAS",
+            "DIR": "Calle 48 # 29 - 34",
+            "CIU": "Bucaramanga"
+        },
+        "VENDEDOR": {
+            "COD": 10263,
+            "NOM": "MARIA GOMEZ"
+        },
+        "referencias": [
+            {
+                "COD": "071",
+                "NOM": "Producto 71",
+                "CANT": 9,
+                "COSTO": 45.06
+            },
+            {
+                "COD": "008",
+                "NOM": "Producto 8",
+                "CANT": 5,
+                "COSTO": 40.7
+            }
+        ],
+        "notas": [
+            {
+                "COD": "*NOTA",
+                "NOM": "Dejar en portería"
+            }
+        ]
+    },
+    {
+        "NUM": 12426,
+        "FECHA": "2024-07-06",
+        "CLIENTES": {
+            "COD": "901134904-09",
+            "NOM": "Empresa 252 SAS",
+            "DIR": "Calle 9 # 27 - 24",
+            "CIU": "Bogotá"
+        },
+        "VENDEDOR": {
+            "COD": 10263,
+            "NOM": "MARIA GOMEZ"
+        },
+        "referencias": [
+            {
+                "COD": "098",
+                "NOM": "Producto 98",
+                "CANT": 19,
+                "COSTO": 97.92
+            },
+            {
+                "COD": "020",
+                "NOM": "Producto 20",
+                "CANT": 12,
+                "COSTO": 121.76
+            }
+        ],
+        "notas": [
+            {
+                "COD": "*NOTA",
+                "NOM": "Dejar en portería"
+            }
+        ]
+    },
+    {
+        "NUM": 12427,
+        "FECHA": "2024-06-17",
+        "CLIENTES": {
+            "COD": "901570408-02",
+            "NOM": "Empresa 155 SAS",
+            "DIR": "Calle 14 # 73 - 61",
+            "CIU": "Cali"
+        },
+        "VENDEDOR": {
+            "COD": 10263,
+            "NOM": "MARIA GOMEZ"
+        },
+        "referencias": [
+            {
+                "COD": "087",
+                "NOM": "Producto 87",
+                "CANT": 14,
+                "COSTO": 18.23
+            },
+            {
+                "COD": "050",
+                "NOM": "Producto 50",
+                "CANT": 19,
+                "COSTO": 52.33
+            }
+        ],
+        "notas": [
+            {
+                "COD": "*NOTA",
+                "NOM": "Pago contra entrega"
+            }
+        ]
+    },
+    {
+        "NUM": 12428,
+        "FECHA": "2024-07-28",
+        "CLIENTES": {
+            "COD": "901830093-03",
+            "NOM": "Empresa 120 SAS",
+            "DIR": "Calle 13 # 25 - 33",
+            "CIU": "Bucaramanga"
+        },
+        "VENDEDOR": {
+            "COD": 10265,
+            "NOM": "ANA DIAZ"
+        },
+        "referencias": [
+            {
+                "COD": "034",
+                "NOM": "Producto 34",
+                "CANT": 3,
+                "COSTO": 88.75
+            },
+            {
+                "COD": "035",
+                "NOM": "Producto 35",
+                "CANT": 8,
+                "COSTO": 65.83
+            }
+        ],
+        "notas": [
+            {
+                "COD": "*NOTA",
+                "NOM": "Dejar en portería"
+            }
+        ]
+    },
+    {
+        "NUM": 12429,
+        "FECHA": "2024-06-16",
+        "CLIENTES": {
+            "COD": "901457919-03",
+            "NOM": "Empresa 174 SAS",
+            "DIR": "Calle 65 # 76 - 31",
+            "CIU": "Cali"
+        },
+        "VENDEDOR": {
+            "COD": 10262,
+            "NOM": "JUAN PEREZ"
+        },
+        "referencias": [
+            {
+                "COD": "033",
+                "NOM": "Producto 33",
+                "CANT": 1,
+                "COSTO": 119.09
+            },
+            {
+                "COD": "076",
+                "NOM": "Producto 76",
+                "CANT": 18,
+                "COSTO": 132.53
+            },
+            {
+                "COD": "067",
+                "NOM": "Producto 67",
+                "CANT": 7,
+                "COSTO": 86.73
+            }
+        ],
+        "notas": [
+            {
+                "COD": "*NOTA",
+                "NOM": "Llamar antes de entregar"
+            }
+        ]
+    },
+    {
+        "NUM": 12430,
+        "FECHA": "2024-07-19",
+        "CLIENTES": {
+            "COD": "901142592-06",
+            "NOM": "Empresa 154 SAS",
+            "DIR": "Calle 21 # 10 - 28",
+            "CIU": "Bucaramanga"
+        },
+        "VENDEDOR": {
+            "COD": 10262,
+            "NOM": "JUAN PEREZ"
+        },
+        "referencias": [
+            {
+                "COD": "100",
+                "NOM": "Producto 100",
+                "CANT": 13,
+                "COSTO": 37.36
+            },
+            {
+                "COD": "014",
+                "NOM": "Producto 14",
+                "CANT": 3,
+                "COSTO": 11.65
+            }
+        ],
+        "notas": [
+            {
+                "COD": "*NOTA",
+                "NOM": "Pago contra entrega"
+            }
+        ]
+    },
+    {
+        "NUM": 12431,
+        "FECHA": "2024-07-23",
+        "CLIENTES": {
+            "COD": "901213438-02",
+            "NOM": "Empresa 270 SAS",
+            "DIR": "Calle 120 # 55 - 21",
+            "CIU": "Barranquilla"
+        },
+        "VENDEDOR": {
+            "COD": 10262,
+            "NOM": "JUAN PEREZ"
+        },
+        "referencias": [
+            {
+                "COD": "057",
+                "NOM": "Producto 57",
+                "CANT": 11,
+                "COSTO": 18.68
+            },
+            {
+                "COD": "085",
+                "NOM": "Producto 85",
+                "CANT": 12,
+                "COSTO": 63.05
+            },
+            {
+                "COD": "066",
+                "NOM": "Producto 66",
+                "CANT": 17,
+                "COSTO": 40.83
+            },
+            {
+                "COD": "050",
+                "NOM": "Producto 50",
+                "CANT": 19,
+                "COSTO": 115.63
+            }
+        ],
+        "notas": [
+            {
+                "COD": "*NOTA",
+                "NOM": "Pago contra entrega"
+            }
+        ]
+    },
+    {
+        "NUM": 12432,
+        "FECHA": "2024-07-20",
+        "CLIENTES": {
+            "COD": "901113524-02",
+            "NOM": "Empresa 171 SAS",
+            "DIR": "Calle 41 # 29 - 93",
+            "CIU": "Cali"
+        },
+        "VENDEDOR": {
+            "COD": 10264,
+            "NOM": "CARLOS RUIZ"
+        },
+        "referencias": [
+            {
+                "COD": "086",
+                "NOM": "Producto 86",
+                "CANT": 13,
+                "COSTO": 144.11
+            }
+        ],
+        "notas": [
+            {
+                "COD": "*NOTA",
+                "NOM": "Entrega en horario de oficina"
+            }
+        ]
+    },
+    {
+        "NUM": 12433,
+        "FECHA": "2024-07-07",
+        "CLIENTES": {
+            "COD": "901624286-07",
+            "NOM": "Empresa 32 SAS",
+            "DIR": "Calle 125 # 40 - 43",
+            "CIU": "Medellín"
+        },
+        "VENDEDOR": {
+            "COD": 10263,
+            "NOM": "MARIA GOMEZ"
+        },
+        "referencias": [
+            {
+                "COD": "097",
+                "NOM": "Producto 97",
+                "CANT": 7,
+                "COSTO": 83.14
+            },
+            {
+                "COD": "034",
+                "NOM": "Producto 34",
+                "CANT": 1,
+                "COSTO": 77.55
+            },
+            {
+                "COD": "017",
+                "NOM": "Producto 17",
+                "CANT": 1,
+                "COSTO": 53.26
+            }
+        ],
+        "notas": [
+            {
+                "COD": "*NOTA",
+                "NOM": "Entrega en horario de oficina"
+            }
+        ]
+    },
+    {
+        "NUM": 12434,
+        "FECHA": "2024-07-27",
+        "CLIENTES": {
+            "COD": "901600445-03",
+            "NOM": "Empresa 71 SAS",
+            "DIR": "Calle 14 # 81 - 30",
+            "CIU": "Bogotá"
+        },
+        "VENDEDOR": {
+            "COD": 10264,
+            "NOM": "CARLOS RUIZ"
+        },
+        "referencias": [
+            {
+                "COD": "076",
+                "NOM": "Producto 76",
+                "CANT": 5,
+                "COSTO": 123.33
+            },
+            {
+                "COD": "034",
+                "NOM": "Producto 34",
+                "CANT": 4,
+                "COSTO": 114.02
+            }
+        ],
+        "notas": [
+            {
+                "COD": "*NOTA",
+                "NOM": "Mercancía delicada"
+            }
+        ]
+    },
+    {
+        "NUM": 12435,
+        "FECHA": "2024-07-09",
+        "CLIENTES": {
+            "COD": "901802880-02",
+            "NOM": "Empresa 102 SAS",
+            "DIR": "Calle 142 # 47 - 85",
+            "CIU": "Bucaramanga"
+        },
+        "VENDEDOR": {
+            "COD": 10265,
+            "NOM": "ANA DIAZ"
+        },
+        "referencias": [
+            {
+                "COD": "019",
+                "NOM": "Producto 19",
+                "CANT": 6,
+                "COSTO": 93.85
+            },
+            {
+                "COD": "006",
+                "NOM": "Producto 6",
+                "CANT": 3,
+                "COSTO": 90.03
+            },
+            {
+                "COD": "049",
+                "NOM": "Producto 49",
+                "CANT": 4,
+                "COSTO": 119.86
+            }
+        ],
+        "notas": [
+            {
+                "COD": "*NOTA",
+                "NOM": "Llamar antes de entregar"
+            }
+        ]
+    },
+    {
+        "NUM": 12436,
+        "FECHA": "2024-06-27",
+        "CLIENTES": {
+            "COD": "901775808-05",
+            "NOM": "Empresa 188 SAS",
+            "DIR": "Calle 3 # 79 - 25",
+            "CIU": "Medellín"
+        },
+        "VENDEDOR": {
+            "COD": 10264,
+            "NOM": "CARLOS RUIZ"
+        },
+        "referencias": [
+            {
+                "COD": "002",
+                "NOM": "Producto 2",
+                "CANT": 18,
+                "COSTO": 120.31
+            },
+            {
+                "COD": "045",
+                "NOM": "Producto 45",
+                "CANT": 12,
+                "COSTO": 87.23
+            },
+            {
+                "COD": "023",
+                "NOM": "Producto 23",
+                "CANT": 18,
+                "COSTO": 137.92
+            },
+            {
+                "COD": "057",
+                "NOM": "Producto 57",
+                "CANT": 3,
+                "COSTO": 132.32
+            }
+        ],
+        "notas": [
+            {
+                "COD": "*NOTA",
+                "NOM": "Entrega en horario de oficina"
+            }
+        ]
+    },
+    {
+        "NUM": 12437,
+        "FECHA": "2024-07-31",
+        "CLIENTES": {
+            "COD": "901541669-02",
+            "NOM": "Empresa 105 SAS",
+            "DIR": "Calle 125 # 72 - 15",
+            "CIU": "Cali"
+        },
+        "VENDEDOR": {
+            "COD": 10265,
+            "NOM": "ANA DIAZ"
+        },
+        "referencias": [
+            {
+                "COD": "013",
+                "NOM": "Producto 13",
+                "CANT": 9,
+                "COSTO": 108.49
+            },
+            {
+                "COD": "062",
+                "NOM": "Producto 62",
+                "CANT": 18,
+                "COSTO": 72.32
+            }
+        ],
+        "notas": [
+            {
+                "COD": "*NOTA",
+                "NOM": "Mercancía delicada"
+            }
+        ]
+    },
+    {
+        "NUM": 12438,
+        "FECHA": "2024-06-16",
+        "CLIENTES": {
+            "COD": "901455589-05",
+            "NOM": "Empresa 203 SAS",
+            "DIR": "Calle 76 # 66 - 54",
+            "CIU": "Medellín"
+        },
+        "VENDEDOR": {
+            "COD": 10264,
+            "NOM": "CARLOS RUIZ"
+        },
+        "referencias": [
+            {
+                "COD": "037",
+                "NOM": "Producto 37",
+                "CANT": 7,
+                "COSTO": 58.03
+            },
+            {
+                "COD": "066",
+                "NOM": "Producto 66",
+                "CANT": 8,
+                "COSTO": 85.66
+            },
+            {
+                "COD": "051",
+                "NOM": "Producto 51",
+                "CANT": 13,
+                "COSTO": 134.75
+            }
+        ],
+        "notas": [
+            {
+                "COD": "*NOTA",
+                "NOM": "Dejar en portería"
+            }
+        ]
+    },
+    {
+        "NUM": 12439,
+        "FECHA": "2024-07-25",
+        "CLIENTES": {
+            "COD": "901240273-06",
+            "NOM": "Empresa 72 SAS",
+            "DIR": "Calle 144 # 3 - 12",
+            "CIU": "Medellín"
+        },
+        "VENDEDOR": {
+            "COD": 10262,
+            "NOM": "JUAN PEREZ"
+        },
+        "referencias": [
+            {
+                "COD": "043",
+                "NOM": "Producto 43",
+                "CANT": 18,
+                "COSTO": 24.88
+            }
+        ],
+        "notas": [
+            {
+                "COD": "*NOTA",
+                "NOM": "Entrega en horario de oficina"
+            }
+        ]
+    },
+    {
+        "NUM": 12440,
+        "FECHA": "2024-07-13",
+        "CLIENTES": {
+            "COD": "901789575-08",
+            "NOM": "Empresa 72 SAS",
+            "DIR": "Calle 64 # 77 - 60",
+            "CIU": "Medellín"
+        },
+        "VENDEDOR": {
+            "COD": 10262,
+            "NOM": "JUAN PEREZ"
+        },
+        "referencias": [
+            {
+                "COD": "068",
+                "NOM": "Producto 68",
+                "CANT": 8,
+                "COSTO": 71.42
+            }
+        ],
+        "notas": [
+            {
+                "COD": "*NOTA",
+                "NOM": "Dejar en portería"
+            }
+        ]
+    },
+    {
+        "NUM": 12441,
+        "FECHA": "2024-07-27",
+        "CLIENTES": {
+            "COD": "901267617-09",
+            "NOM": "Empresa 82 SAS",
+            "DIR": "Calle 66 # 66 - 53",
+            "CIU": "Medellín"
+        },
+        "VENDEDOR": {
+            "COD": 10264,
+            "NOM": "CARLOS RUIZ"
+        },
+        "referencias": [
+            {
+                "COD": "039",
+                "NOM": "Producto 39",
+                "CANT": 13,
+                "COSTO": 73.5
+            },
+            {
+                "COD": "012",
+                "NOM": "Producto 12",
+                "CANT": 11,
+                "COSTO": 14.22
+            },
+            {
+                "COD": "022",
+                "NOM": "Producto 22",
+                "CANT": 15,
+                "COSTO": 134.82
+            }
+        ],
+        "notas": [
+            {
+                "COD": "*NOTA",
+                "NOM": "Llamar antes de entregar"
+            }
+        ]
+    },
+    {
+        "NUM": 12442,
+        "FECHA": "2024-06-16",
+        "CLIENTES": {
+            "COD": "901696959-05",
+            "NOM": "Empresa 297 SAS",
+            "DIR": "Calle 149 # 55 - 77",
+            "CIU": "Bogotá"
+        },
+        "VENDEDOR": {
+            "COD": 10265,
+            "NOM": "ANA DIAZ"
+        },
+        "referencias": [
+            {
+                "COD": "006",
+                "NOM": "Producto 6",
+                "CANT": 20,
+                "COSTO": 132.77
+            },
+            {
+                "COD": "099",
+                "NOM": "Producto 99",
+                "CANT": 9,
+                "COSTO": 52.02
+            }
+        ],
+        "notas": [
+            {
+                "COD": "*NOTA",
+                "NOM": "Pago contra entrega"
+            }
+        ]
+    },
+    {
+        "NUM": 12443,
+        "FECHA": "2024-07-20",
+        "CLIENTES": {
+            "COD": "901321507-06",
+            "NOM": "Empresa 300 SAS",
+            "DIR": "Calle 103 # 18 - 31",
+            "CIU": "Barranquilla"
+        },
+        "VENDEDOR": {
+            "COD": 10262,
+            "NOM": "JUAN PEREZ"
+        },
+        "referencias": [
+            {
+                "COD": "073",
+                "NOM": "Producto 73",
+                "CANT": 10,
+                "COSTO": 49.19
+            },
+            {
+                "COD": "041",
+                "NOM": "Producto 41",
+                "CANT": 9,
+                "COSTO": 114.85
+            }
+        ],
+        "notas": [
+            {
+                "COD": "*NOTA",
+                "NOM": "Entrega en horario de oficina"
+            }
+        ]
+    },
+    {
+        "NUM": 12444,
+        "FECHA": "2024-08-03",
+        "CLIENTES": {
+            "COD": "901717589-07",
+            "NOM": "Empresa 242 SAS",
+            "DIR": "Calle 141 # 29 - 20",
+            "CIU": "Barranquilla"
+        },
+        "VENDEDOR": {
+            "COD": 10265,
+            "NOM": "ANA DIAZ"
+        },
+        "referencias": [
+            {
+                "COD": "063",
+                "NOM": "Producto 63",
+                "CANT": 3,
+                "COSTO": 148.61
+            },
+            {
+                "COD": "016",
+                "NOM": "Producto 16",
+                "CANT": 10,
+                "COSTO": 27.94
+            }
+        ],
+        "notas": [
+            {
+                "COD": "*NOTA",
+                "NOM": "Mercancía delicada"
+            }
+        ]
+    }
+]

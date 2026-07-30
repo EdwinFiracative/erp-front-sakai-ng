@@ -15,6 +15,7 @@ import { OverlayDemo } from './overlaydemo';
 import { TreeDemo } from './treedemo';
 import { MenuDemo } from './menudemo';
 import { AppPedidoComponent } from '../../components/app.pedido.component/app.pedido.component';
+import { PedidoTableComponent } from '../../components/pedido.table.component/pedido.table.component';
 
 export default [
     { path: 'button', data: { breadcrumb: 'Button' }, component: ButtonDemo },
@@ -30,6 +31,8 @@ export default [
     { path: 'timeline', data: { breadcrumb: 'Timeline' }, component: TimelineDemo },
     { path: 'table', data: { breadcrumb: 'Table' }, component: TableDemo },
     { path: 'pedido', data: { breadcrumb: 'Pedido' }, component: AppPedidoComponent },
+    { path: 'pedido2', data: { breadcrumb: 'Pedido2' }, component: AppPedidoComponent },
+    { path: 'pedidotabla', data: { breadcrumb: 'PedidoTabla' }, component: PedidoTableComponent },
     { path: 'overlay', data: { breadcrumb: 'Overlay' }, component: OverlayDemo },
     { path: 'tree', data: { breadcrumb: 'Tree' }, component: TreeDemo },
     { path: 'menu', data: { breadcrumb: 'Menu' }, component: MenuDemo },

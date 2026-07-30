@@ -94,6 +94,7 @@ export class AppMenu {
                     { label: 'Button', icon: 'pi pi-fw pi-mobile', class: 'rotated-icon', routerLink: ['/uikit/button'] },
                     { label: 'Table', icon: 'pi pi-fw pi-table', routerLink: ['/uikit/table'] },
                     { label: 'Pedido', icon: 'pi pi-fw pi-table', routerLink: ['/uikit/pedido'] },
+                    { label: 'PedidoTabla', icon: 'pi pi-fw pi-table', routerLink: ['/uikit/pedidotabla'] },
                     { label: 'List', icon: 'pi pi-fw pi-list', routerLink: ['/uikit/list'] },
                     { label: 'Tree', icon: 'pi pi-fw pi-share-alt', routerLink: ['/uikit/tree'] },
                     { label: 'Panel', icon: 'pi pi-fw pi-tablet', routerLink: ['/uikit/panel'] },
