@@ -94,7 +94,29 @@ export class AppMenu {
                     { label: 'Button', icon: 'pi pi-fw pi-mobile', class: 'rotated-icon', routerLink: ['/uikit/button'] },
                     { label: 'Table', icon: 'pi pi-fw pi-table', routerLink: ['/uikit/table'] },
                     { label: 'Pedido', icon: 'pi pi-fw pi-table', routerLink: ['/uikit/pedido'] },
-                    { label: 'PedidoTabla', icon: 'pi pi-fw pi-apple', routerLink: ['/uikit/pedidotabla'] },
+                    // { label: 'PedidoTabla', icon: 'pi pi-fw pi-apple', routerLink: ['/uikit/pedidotabla'] },
+                    {
+                        label: 'Facturación',
+                        icon: 'pi pi-fw pi-dollar',
+                        path: '/uikit',
+                        items: [
+                            {
+                                label: 'Pedidos',
+                                icon: 'pi pi-fw pi-table',
+                                routerLink: ['/uikit/pedidotabla']
+                            },
+                            {
+                                label: 'Informe Pedidos',
+                                icon: 'pi pi-fw pi-chart-bar',
+                             routerLink: ['/uikit/informepedidos']
+                         },
+                            // {
+                            //     label: 'Access Denied',
+                            //     icon: 'pi pi-fw pi-lock',
+                            //     routerLink: ['/auth/access']
+                            // }
+                        ]
+                    },
                     { label: 'List', icon: 'pi pi-fw pi-list', routerLink: ['/uikit/list'] },
                     { label: 'Tree', icon: 'pi pi-fw pi-share-alt', routerLink: ['/uikit/tree'] },
                     { label: 'Panel', icon: 'pi pi-fw pi-tablet', routerLink: ['/uikit/panel'] },
