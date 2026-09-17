@@ -1,5 +1,6 @@
 //import { Component } from '@angular/core';
 import { Component, ElementRef, inject, OnInit, ViewChild } from '@angular/core';
+import { HttpErrorResponse } from '@angular/common/http';
 import { ConfirmationService, MessageService } from 'primeng/api';
 import { InputTextModule } from 'primeng/inputtext';
 import { MultiSelectModule } from 'primeng/multiselect';
@@ -79,6 +80,7 @@ export class PedidoTableComponent implements OnInit {
 
     pedidos$: Observable<ViewErpPedidoHeaderDto[]> = of([]);
      private readonly pedidoService = inject(PedidosServiceTabla);
+     private readonly messageService = inject(MessageService);
 
     rowGroupMetadata: any;
 
@@ -101,14 +103,63 @@ export class PedidoTableComponent implements OnInit {
 
     ngOnInit() {
                 this.pedidos$ = this.pedidoService.getPedidos().pipe(
-                    catchError(() => of([])),
+                    catchError((error: HttpErrorResponse) => {
+                        this.handlePedidosError(error);
+                        return of([]);
+                    }),
                     finalize(() => {
                         this.loading = false;
                     }),
                     shareReplay(1)
 
                 );
-        
+
+    }
+
+    private handlePedidosError(error: HttpErrorResponse): void {
+        let summary = 'Error';
+        let detail = 'Ocurrió un error al cargar los pedidos.';
+
+        switch (error.status) {
+            case 0:
+                summary = 'Sin conexión';
+                detail = 'No se pudo conectar con el servidor. Verifique su conexión a internet.';
+                break;
+            case 400:
+                summary = 'Solicitud inválida';
+                detail = 'La solicitud enviada no es válida.';
+                break;
+            case 401:
+                summary = 'No autorizado';
+                detail = 'Su sesión ha expirado. Por favor, inicie sesión nuevamente.';
+                break;
+            case 403:
+                summary = 'Acceso denegado';
+                detail = 'No tiene permisos para consultar los pedidos.';
+                break;
+            case 404:
+                summary = 'No encontrado';
+                detail = 'No se encontraron pedidos.';
+                break;
+            case 408:
+            case 504:
+                summary = 'Tiempo de espera agotado';
+                detail = 'El servidor tardó demasiado en responder. Intente nuevamente.';
+                break;
+            case 500:
+                summary = 'Error del servidor';
+                detail = 'Ocurrió un error interno en el servidor. Intente más tarde.';
+                break;
+            case 502:
+            case 503:
+                summary = 'Servicio no disponible';
+                detail = 'El servicio no está disponible en este momento. Intente más tarde.';
+                break;
+            default:
+                detail = `Error inesperado (código ${error.status}).`;
+        }
+
+        this.messageService.add({ severity: 'error', summary, detail });
     }
 
     onSort() {
