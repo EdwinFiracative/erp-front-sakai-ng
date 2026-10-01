@@ -106,6 +106,11 @@ export class AppMenu {
                                 routerLink: ['/uikit/pedidotabla']
                             },
                             {
+                                label: 'Detalle Pedidos',
+                                icon: 'pi pi-fw pi-list',
+                                routerLink: ['/uikit/orderdetail']
+                            },
+                            {
                                 label: 'Informe Pedidos',
                                 icon: 'pi pi-fw pi-chart-bar',
                              routerLink: ['/uikit/informepedidos']
