@@ -1,4 +1,6 @@
 import { BranchDto } from './branch.dto';
+import { OrderReferStatusDto } from './order-refer-status.dto';
+import { ProjectDto } from './project.dto';
 import { ReferenceDto } from './reference.dto';
 import { VendorDto } from './vendor.dto';
 
@@ -15,15 +17,15 @@ export interface OrderDetailReferenceDto {
   orderReferQuantity?: number | null;
   orderReferUnitPrice?: number | null; // Java BigDecimal
   valorTotal?: number | null; // cantidad * valor unitario (sin impuestos); no existe en la base
-  orderReferApproState?: string | null;
   orderReferDelivDate?: string | null; // ISO date (yyyy-MM-dd) from LocalDate
+  orderReferProject?: ProjectDto | null; // proyecto de la linea; null si no tiene
+  orderReferStatus?: OrderReferStatusDto | null;
 }
 
-export interface OrderDetailDto {
+export interface OrderHeaderDto {
   orderHeaderId?: number | null;
   orderHeaderNumber?: number | null;
   orderHeaderDate?: string | null; // ISO date (yyyy-MM-dd) from LocalDate
-  orderHeaderProject?: string | null;
   orderHeaderPaymeConditions?: string | null;
   orderHeaderDescription?: string | null;
   orderHeaderBranch?: BranchDto | null;
