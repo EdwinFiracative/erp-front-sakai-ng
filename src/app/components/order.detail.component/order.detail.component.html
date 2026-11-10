@@ -3,8 +3,8 @@
             <div class="font-semibold text-xl mb-4">Detalle de pedidos</div>
             <p-table
                 #dt1
-                [value]="(orders$ | async) ?? []"
-                [loading]="loading"
+                [value]="orders()"
+                [loading]="loading()"
                 [paginator]="true"
                 [rows]="25"
                 [rowsPerPageOptions]="[25, 50, 100]"
@@ -28,6 +28,30 @@
                 responsiveLayout="scroll"
             >
                 <ng-template #caption>
+                    <div class="flex flex-wrap items-center gap-2 mb-4">
+                        <p-datepicker
+                            [ngModel]="dateRange()"
+                            (ngModelChange)="onDateRangeChange($event)"
+                            selectionMode="range"
+                            [readonlyInput]="true"
+                            [showIcon]="true"
+                            [showButtonBar]="true"
+                            dateFormat="yy-mm-dd"
+                            placeholder="Rango de fechas"
+                            styleClass="w-72"
+                        />
+                        <p-multiselect
+                            [options]="statusOptions"
+                            [ngModel]="selectedStatuses()"
+                            (ngModelChange)="selectedStatuses.set($event ?? [])"
+                            optionLabel="label"
+                            optionValue="value"
+                            placeholder="Todos los estados"
+                            display="chip"
+                            [showClear]="true"
+                            styleClass="min-w-72"
+                        />
+                    </div>
                     <div class="flex justify-between items-center flex-column sm:flex-row">
                         <div class="flex items-center gap-2">
                             <button pButton icon="pi pi-fw {{ isExpanded ? 'pi-minus' : 'pi-plus' }}" label="{{ isExpanded ? 'Collapse All' : 'Expand All' }}" (click)="expandAll()"></button>
@@ -158,7 +182,11 @@
                                             <td>{{ ref.valorTotal | currency: 'USD' }}</td>
                                             <td>{{ ref.orderReferProject?.projeName || '-' }}</td>
                                             <td>
-                                                <p-tag [value]="ref.orderReferStatus?.orderReferStatusName" [severity]="getSeverity(ref.orderReferStatus?.orderReferStatusId)" />
+                                                <p-tag
+                                                    [value]="ref.orderReferStatus?.orderReferStatusName"
+                                                    [style.background]="getStatusColor(ref.orderReferStatus?.orderReferStatusName).background"
+                                                    [style.color]="getStatusColor(ref.orderReferStatus?.orderReferStatusName).color"
+                                                />
                                             </td>
                                             <td>{{ ref.orderReferDelivDate | date: 'yyyy-MM-dd' }}</td>
                                         </tr>
