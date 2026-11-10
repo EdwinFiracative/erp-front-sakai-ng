@@ -1,3 +1,4 @@
+        <p-toast />
         <div class="card">
             <div class="font-semibold text-xl mb-4">Detalle de pedidos</div>
             <p-table
@@ -10,6 +11,8 @@
                 [showCurrentPageReport]="true"
                 currentPageReportTemplate="Mostrando {first} a {last} de {totalRecords} pedidos"
                 dataKey="orderHeaderId"
+                sortField="orderHeaderNumber"
+                [sortOrder]="-1"
                 [tableStyle]="{ width: '100%' }"
                 [rowHover]="true"
                 [showGridlines]="true"
