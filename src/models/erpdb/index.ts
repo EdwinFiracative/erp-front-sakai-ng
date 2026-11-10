@@ -2,6 +2,7 @@ export * from './branch.dto';
 export * from './client.dto';
 export * from './measur-unit.dto';
 export * from './order-detail.dto';
+export * from './order-header.dto';
 export * from './order-refer-status.dto';
 export * from './project.dto';
 export * from './refer-classification.dto';

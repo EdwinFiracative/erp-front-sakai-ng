@@ -10,6 +10,9 @@ import { IconFieldModule } from 'primeng/iconfield';
 import { TagModule } from 'primeng/tag';
 import { DatePickerModule } from 'primeng/datepicker';
 import { MultiSelectModule } from 'primeng/multiselect';
+import { ToastModule } from 'primeng/toast';
+import { MessageService } from 'primeng/api';
+import { HttpErrorResponse } from '@angular/common/http';
 import { ObjectUtils } from 'primeng/utils';
 import { of, Subscription } from 'rxjs';
 import { catchError, finalize } from 'rxjs/operators';
@@ -37,11 +40,13 @@ const DEFAULT_STATUS_COLOR = { background: '#000000', color: '#ffffff' };
 @Component({
     selector: 'app-order-detail',
     standalone: true,
-    imports: [TableModule, InputIconModule, TagModule, InputTextModule, CommonModule, FormsModule, ButtonModule, RippleModule, IconFieldModule, DatePickerModule, MultiSelectModule],
-    templateUrl: './order.detail.component.html'
+    imports: [TableModule, InputIconModule, TagModule, InputTextModule, CommonModule, FormsModule, ButtonModule, RippleModule, IconFieldModule, DatePickerModule, MultiSelectModule, ToastModule],
+    templateUrl: './order.detail.component.html',
+    providers: [MessageService]
 })
 export class OrderDetailComponent implements OnInit {
     private readonly orderDetailService = inject(OrderDetailService);
+    private readonly messageService = inject(MessageService);
     private loadSubscription?: Subscription;
 
     readonly statusOptions = ORDER_REFER_STATUSES.map((name) => ({ label: name, value: name }));
@@ -97,7 +102,11 @@ export class OrderDetailComponent implements OnInit {
         this.loadSubscription = this.orderDetailService
             .getOrderHeaders(this.toIsoDate(fechaInicial), this.toIsoDate(fechaFinal))
             .pipe(
-                catchError(() => of([])),
+                catchError((error: HttpErrorResponse) => {
+                    console.error('Error cargando pedidos', error);
+                    this.messageService.add({ severity: 'error', summary: `Error ${error.status}`, detail: 'No se pudieron cargar los pedidos.', life: 6000 });
+                    return of([]);
+                }),
                 finalize(() => this.loading.set(false))
             )
             .subscribe((orders) => this.allOrders.set(orders));
