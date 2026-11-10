@@ -1,20 +1,11 @@
 import { BranchDto } from './branch.dto';
 import { OrderDetailNoteDto } from './order-detail.dto';
+import { OrderReferStatusDto } from './order-refer-status.dto';
+import { ProjectDto } from './project.dto';
 import { ReferenceDto } from './reference.dto';
 import { VendorDto } from './vendor.dto';
 
 // Contrato de GET /api/orderheader (OrderHeaderDto del backend).
-
-export interface ProjectDto {
-  projeId?: number | null;
-  projeName?: string | null;
-}
-
-// Estados: 1 Cancelado, 2 Aprobado, 3 Detenido, 4 En Revision, 5 Anulado (lista en /api/orderreferstatus)
-export interface OrderReferStatusDto {
-  orderReferStatusId?: number | null;
-  orderReferStatusName?: string | null;
-}
 
 // Linea de negocio: hijo directo de la raiz del arbol de clasificacion de referencias
 export interface OrderBusinessLineDto {
@@ -32,7 +23,7 @@ export interface OrderHeaderLineDto {
   valorTotal?: number | null; // cantidad * valor unitario (sin impuestos); no existe en la base
   orderReferDelivDate?: string | null; // ISO date (yyyy-MM-dd) from LocalDate
   orderReferProject?: ProjectDto | null;
-  orderReferStatus?: OrderReferStatusDto | null;
+  orderReferStatus?: OrderReferStatusDto | null; // 1 Cancelado, 2 Aprobado, 3 Detenido, 4 En Revision, 5 Anulado (lista en /api/orderreferstatus)
 }
 
 export interface OrderHeaderDto {
