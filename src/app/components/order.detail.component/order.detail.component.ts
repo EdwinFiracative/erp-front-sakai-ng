@@ -16,8 +16,16 @@ import { HttpErrorResponse } from '@angular/common/http';
 import { ObjectUtils } from 'primeng/utils';
 import { of, Subscription } from 'rxjs';
 import { catchError, finalize } from 'rxjs/operators';
-import { OrderHeaderDto } from '@/models/erpdb';
+import { OrderHeaderDto, OrderHeaderLineDto } from '@/models/erpdb';
 import { OrderDetailService } from '@/app/services/order-detail-service';
+
+// Campos planos derivados de las lineas visibles: la tabla de PrimeNG no busca dentro de arreglos.
+export interface OrderDetailRow extends OrderHeaderDto {
+    orderReference: OrderHeaderLineDto[];
+    businessLineNames: string;
+    referenceCodes: string;
+    referenceNames: string;
+}
 
 interface expandedRows {
     [key: string]: boolean;
@@ -58,17 +66,15 @@ export class OrderDetailComponent implements OnInit {
     private readonly allOrders = signal<OrderHeaderDto[]>([]);
 
     // Igual que el filtro "estados" del backend: solo pedidos con lineas en los estados elegidos y solo esas lineas.
-    readonly orders = computed(() => {
+    readonly orders = computed<OrderDetailRow[]>(() => {
         const statuses = new Set(this.selectedStatuses());
-        if (statuses.size === 0) {
-            return this.allOrders();
-        }
         return this.allOrders()
-            .map((order) => ({
-                ...order,
-                orderReference: (order.orderReference ?? []).filter((ref) => statuses.has(ref.orderReferStatus?.orderReferStatusName ?? ''))
-            }))
-            .filter((order) => order.orderReference.length > 0);
+            .map((order) => {
+                const lines = order.orderReference ?? [];
+                const visible = statuses.size === 0 ? lines : lines.filter((ref) => statuses.has(ref.orderReferStatus?.orderReferStatusName ?? ''));
+                return this.toRow(order, visible);
+            })
+            .filter((order) => statuses.size === 0 || order.orderReference.length > 0);
     });
 
     readonly loading = signal(true);
@@ -110,6 +116,17 @@ export class OrderDetailComponent implements OnInit {
                 finalize(() => this.loading.set(false))
             )
             .subscribe((orders) => this.allOrders.set(orders));
+    }
+
+    private toRow(order: OrderHeaderDto, lines: OrderHeaderLineDto[]): OrderDetailRow {
+        const distinct = (values: (string | null | undefined)[]) => [...new Set(values.filter((v): v is string => !!v))].join(', ');
+        return {
+            ...order,
+            orderReference: lines,
+            businessLineNames: distinct(lines.map((ref) => ref.orderReferBusinessLine?.referClassName)),
+            referenceCodes: distinct(lines.map((ref) => ref.orderReferReference?.referCod)),
+            referenceNames: distinct(lines.map((ref) => ref.orderReferReference?.referName))
+        };
     }
 
     private defaultDateRange(): Date[] {
