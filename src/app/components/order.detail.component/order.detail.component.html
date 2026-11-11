@@ -23,7 +23,10 @@
                     'orderHeaderPaymeConditions',
                     'orderHeaderBranch.branchClient.clientThirdParty.thirdPartyName',
                     'orderHeaderBranch.branchCity',
-                    'orderHeaderVendor.vendorThirdParty.thirdPartyName'
+                    'orderHeaderVendor.vendorThirdParty.thirdPartyName',
+                    'businessLineNames',
+                    'referenceCodes',
+                    'referenceNames'
                 ]"
                 responsiveLayout="scroll"
             >
@@ -98,6 +101,12 @@
                                 <p-columnFilter type="text" field="orderHeaderVendor.vendorThirdParty.thirdPartyName" display="menu" placeholder="Buscar por vendedor"></p-columnFilter>
                             </div>
                         </th>
+                        <th pSortableColumn="businessLineNames" style="min-width: 12rem">
+                            <div class="flex justify-between items-center">
+                                <span>Línea de negocio <p-sortIcon field="businessLineNames" /></span>
+                                <p-columnFilter type="text" field="businessLineNames" display="menu" placeholder="Buscar por línea"></p-columnFilter>
+                            </div>
+                        </th>
                         <th pSortableColumn="orderHeaderDescription" style="min-width: 12rem">
                             <div class="flex justify-between items-center">
                                 <span>Descripción <p-sortIcon field="orderHeaderDescription" /></span>
@@ -122,18 +131,19 @@
                         <td>{{ order.orderHeaderBranch?.branchClient?.clientThirdParty?.thirdPartyName }}</td>
                         <td>{{ order.orderHeaderBranch?.branchCity }}</td>
                         <td>{{ order.orderHeaderVendor?.vendorThirdParty?.thirdPartyName }}</td>
+                        <td>{{ order.businessLineNames || '-' }}</td>
                         <td>{{ order.orderHeaderDescription }}</td>
                         <td>{{ order.orderHeaderPaymeConditions }}</td>
                     </tr>
                 </ng-template>
                 <ng-template #emptymessage>
                     <tr>
-                        <td colspan="8">No se encontraron pedidos.</td>
+                        <td colspan="9">No se encontraron pedidos.</td>
                     </tr>
                 </ng-template>
                 <ng-template #expandedrow let-order>
                     <tr>
-                        <td colspan="8">
+                        <td colspan="9">
                             <div class="p-4 grid grid-cols-1 md:grid-cols-2 gap-4">
                                 <div>
                                     <h5>Cliente / Sede</h5>
